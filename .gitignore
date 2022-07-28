@@ -8,3 +8,16 @@
 /Masterplan/obj
 
 /Setup/Release
+
+masterplan/.gitattributes
+masterplan/.gitignore
+/UpgradeLog.htm
+/masterplan/README.md
+/masterplan/Manual.pdf
+/masterplan/Manual.docx
+/Masterplan/Libraries
+/Masterplan/Projects
+/Masterplan/Setup
+.gitignore
+Masterplan.sln
+Masterplan/Masterplan.csproj
