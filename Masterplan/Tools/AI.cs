@@ -272,7 +272,7 @@ namespace Masterplan.Tools
 			{
 				string str = section.Trim().ToLower();
 
-				if (str.Contains("damage") || str.Contains("dmg"))
+				if (str.Contains(Session.I18N.Damage) || str.Contains("dmg"))
 					return str;
 			}
 

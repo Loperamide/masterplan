@@ -99,7 +99,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 3;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// OKBtn
@@ -110,7 +110,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 2;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -393,7 +393,7 @@
 			this.WillBox.Name = "WillBox";
 			this.WillBox.Size = new System.Drawing.Size(43, 17);
 			this.WillBox.TabIndex = 13;
-			this.WillBox.Text = "Will";
+			this.WillBox.Text = Session.I18N.Will;
 			this.WillBox.UseVisualStyleBackColor = true;
 			// 
 			// RefBox
@@ -423,7 +423,7 @@
 			this.ACBox.Name = "ACBox";
 			this.ACBox.Size = new System.Drawing.Size(40, 17);
 			this.ACBox.TabIndex = 10;
-			this.ACBox.Text = "AC";
+			this.ACBox.Text = Session.I18N.AC;
 			this.ACBox.UseVisualStyleBackColor = true;
 			// 
 			// DefenceModLbl

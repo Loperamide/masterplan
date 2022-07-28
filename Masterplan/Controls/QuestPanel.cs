@@ -78,7 +78,7 @@ namespace Masterplan.Controls
 
 				XPSlider.Value = fQuest.XP;
 			}
-			XPBox.Text = fQuest.GetXP() + " XP";
+			XPBox.Text = fQuest.GetXP() + " " + Session.I18N.XP;
 
 			fUpdating = false;
 		}

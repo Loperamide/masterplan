@@ -155,14 +155,14 @@ namespace Masterplan.Controls
 
 			if (ItemList.Items.Count == 0)
 			{
-				ListViewItem lvi = ItemList.Items.Add("(none)");
+				ListViewItem lvi = ItemList.Items.Add("(" + Session.I18N.None + ")");
 				lvi.ForeColor = SystemColors.GrayText;
 			}
 
 			ItemList.Sort();
 
-			XPLbl.Text = fEncounter.GetXP() + " XP";
-			DiffLbl.Text = "Difficulty: " + fEncounter.GetDifficulty(fPartyLevel, Session.Project.Party.Size);
+			XPLbl.Text = fEncounter.GetXP() + " " + Session.I18N.XP;
+			DiffLbl.Text = Session.I18N.Difficulty + ": " + fEncounter.GetDifficulty(fPartyLevel, Session.Project.Party.Size);
 		}
 
 		private void CreatureList_DoubleClick(object sender, EventArgs e)

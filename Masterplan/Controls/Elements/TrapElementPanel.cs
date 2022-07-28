@@ -128,7 +128,7 @@ namespace Masterplan.Controls
 			if (fTrapElement == null)
 				return;
 
-			ListViewItem name_lvi = TrapList.Items.Add(fTrapElement.Trap.Name + ": " + fTrapElement.GetXP() + " XP");
+			ListViewItem name_lvi = TrapList.Items.Add(fTrapElement.Trap.Name + ": " + fTrapElement.GetXP() + " " + Session.I18N.XP);
 			name_lvi.Group = TrapList.Groups[0];
 
 			ListViewItem info_lvi = TrapList.Items.Add(fTrapElement.Trap.Info);
@@ -139,7 +139,7 @@ namespace Masterplan.Controls
                 Map m = Session.Project.FindTacticalMap(fTrapElement.MapID);
                 MapArea ma = m.FindArea(fTrapElement.MapAreaID);
 
-                string str = "Location: " + m.Name;
+                string str = Session.I18N.Location + ": " + m.Name;
                 if (ma != null)
                     str += " (" + ma.Name + ")";
 
@@ -156,7 +156,7 @@ namespace Masterplan.Controls
 
 			if (fTrapElement.Trap.Skills.Count == 0)
 			{
-				ListViewItem lvi = TrapList.Items.Add("(no skills)");
+				ListViewItem lvi = TrapList.Items.Add("(" + Session.I18N.NoSkills + ")");
 				lvi.Group = TrapList.Groups[1];
 				lvi.ForeColor = SystemColors.GrayText;
 			}
@@ -170,7 +170,7 @@ namespace Masterplan.Controls
 
 			if (fTrapElement.Trap.Countermeasures.Count == 0)
 			{
-				ListViewItem lvi = TrapList.Items.Add("(no countermeasures)");
+				ListViewItem lvi = TrapList.Items.Add("(" + Session.I18N.NoCountermeasures + ")");
 				lvi.Group = TrapList.Groups[2];
 				lvi.ForeColor = SystemColors.GrayText;
 			}

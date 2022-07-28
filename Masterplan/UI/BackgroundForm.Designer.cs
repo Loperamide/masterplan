@@ -50,7 +50,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 3;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -62,7 +62,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 4;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// TitleLbl
@@ -72,7 +72,7 @@
 			this.TitleLbl.Name = "TitleLbl";
 			this.TitleLbl.Size = new System.Drawing.Size(30, 13);
 			this.TitleLbl.TabIndex = 0;
-			this.TitleLbl.Text = "Title:";
+			this.TitleLbl.Text = Session.I18N.Title + ":";
 			// 
 			// TitleBox
 			// 
@@ -87,7 +87,7 @@
 			// 
 			this.DetailsBox.AcceptsReturn = true;
 			this.DetailsBox.AcceptsTab = true;
-			this.DetailsBox.DefaultText = "(enter details here)";
+			this.DetailsBox.DefaultText = Session.I18N.EnterDetailsHere;
 			this.DetailsBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.DetailsBox.Location = new System.Drawing.Point(3, 25);
 			this.DetailsBox.Multiline = true;
@@ -95,7 +95,7 @@
 			this.DetailsBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.DetailsBox.Size = new System.Drawing.Size(438, 160);
 			this.DetailsBox.TabIndex = 2;
-			this.DetailsBox.Text = "(enter details here)";
+			this.DetailsBox.Text = Session.I18N.EnterDetailsHere;
 			// 
 			// Pages
 			// 
@@ -118,7 +118,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(444, 188);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// Statusbar
@@ -137,7 +137,7 @@
 			// 
 			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
 			this.toolStripStatusLabel1.Size = new System.Drawing.Size(202, 17);
-			this.toolStripStatusLabel1.Text = "Note: HTML tags are supported here.";
+			this.toolStripStatusLabel1.Text = Session.I18N.NoteHtmlTags;
 			// 
 			// BackgroundForm
 			// 
@@ -157,7 +157,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Background Item";
+			this.Text = Session.I18N.BackgroundItem;
 			this.Pages.ResumeLayout(false);
 			this.DetailsPage.ResumeLayout(false);
 			this.DetailsPage.PerformLayout();

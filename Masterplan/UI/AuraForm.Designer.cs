@@ -52,7 +52,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 5;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -64,7 +64,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 6;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// NameLbl
@@ -74,7 +74,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -105,7 +105,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(241, 109);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -126,7 +126,7 @@
 			this.SizeLbl.Name = "SizeLbl";
 			this.SizeLbl.Size = new System.Drawing.Size(30, 13);
 			this.SizeLbl.TabIndex = 2;
-			this.SizeLbl.Text = "Size:";
+			this.SizeLbl.Text = Session.I18N.Size + ":";
 			// 
 			// SizeBox
 			// 
@@ -153,7 +153,7 @@
 			this.KeywordLbl.Name = "KeywordLbl";
 			this.KeywordLbl.Size = new System.Drawing.Size(56, 13);
 			this.KeywordLbl.TabIndex = 7;
-			this.KeywordLbl.Text = "Keywords:";
+			this.KeywordLbl.Text = Session.I18N.Keywords + ":";
 			// 
 			// AuraForm
 			// 
@@ -178,7 +178,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Aura";
+			this.Text = Session.I18N.Aura;
 			this.Pages.ResumeLayout(false);
 			this.DetailsPage.ResumeLayout(false);
 			this.DetailsPage.PerformLayout();

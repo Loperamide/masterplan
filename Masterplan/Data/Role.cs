@@ -152,9 +152,9 @@ namespace Masterplan.Data
 		public override string ToString()
 		{
 			if (fHasRole)
-				return "Minion " + fType;
+				return Session.I18N.Minion + " " + fType;
 			else
-				return "Minion";
+				return Session.I18N.Minion;
 		}
 	}
 
@@ -235,10 +235,10 @@ namespace Masterplan.Data
 			switch (fFlag)
 			{
 				case RoleFlag.Elite:
-					flag = "Elite ";
+					flag = Session.I18N.Elite;
 					break;
 				case RoleFlag.Solo:
-					flag = "Solo ";
+					flag = Session.I18N.Solo + " ";
 					break;
 			}
 

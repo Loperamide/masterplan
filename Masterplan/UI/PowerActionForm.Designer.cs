@@ -55,7 +55,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 9;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// OKBtn
@@ -66,7 +66,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 8;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -193,7 +193,7 @@
 			this.DailyBtn.Size = new System.Drawing.Size(48, 17);
 			this.DailyBtn.TabIndex = 5;
 			this.DailyBtn.TabStop = true;
-			this.DailyBtn.Text = "Daily";
+			this.DailyBtn.Text = Session.I18N.Daily;
 			this.DailyBtn.UseVisualStyleBackColor = true;
 			// 
 			// EncounterBtn
@@ -204,7 +204,7 @@
 			this.EncounterBtn.Size = new System.Drawing.Size(74, 17);
 			this.EncounterBtn.TabIndex = 2;
 			this.EncounterBtn.TabStop = true;
-			this.EncounterBtn.Text = "Encounter";
+			this.EncounterBtn.Text = Session.I18N.Encounter;
 			this.EncounterBtn.UseVisualStyleBackColor = true;
 			// 
 			// AtWillBtn

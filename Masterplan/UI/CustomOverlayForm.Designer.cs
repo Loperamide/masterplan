@@ -71,7 +71,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -90,7 +90,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 10;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -102,7 +102,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 11;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// Pages
@@ -128,7 +128,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(342, 189);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -251,7 +251,7 @@
 			this.TerrainPowerToolbar.Name = "TerrainPowerToolbar";
 			this.TerrainPowerToolbar.Size = new System.Drawing.Size(311, 25);
 			this.TerrainPowerToolbar.TabIndex = 1;
-			this.TerrainPowerToolbar.Text = "toolStrip1";
+			this.TerrainPowerToolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// EditBtn
 			// 
@@ -260,7 +260,7 @@
 			this.EditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EditBtn.Name = "EditBtn";
 			this.EditBtn.Size = new System.Drawing.Size(31, 22);
-			this.EditBtn.Text = "Edit";
+			this.EditBtn.Text = Session.I18N.Edit;
 			this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
 			// 
 			// RemoveBtn
@@ -270,7 +270,7 @@
 			this.RemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.RemoveBtn.Name = "RemoveBtn";
 			this.RemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.RemoveBtn.Text = "Remove";
+			this.RemoveBtn.Text = Session.I18N.Remove;
 			this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
 			// 
 			// toolStripSeparator1

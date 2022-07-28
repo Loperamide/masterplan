@@ -30,16 +30,16 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CombatForm));
-			System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Combatants", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Delayed / Readied", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Traps", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Skill Challenges", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Custom Tokens and Overlays", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Not In Play", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Defeated", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Predefined", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Custom Tokens", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("Custom Overlays", System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup(Session.I18N.Combatants, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup(Session.I18N.DelayedReadied, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup(Session.I18N.Traps, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup(Session.I18N.SkillChallenges, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup(Session.I18N.CustomTokensOverlays, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup(Session.I18N.NotInPlay, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup(Session.I18N.Defeated, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup(Session.I18N.Predefined, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup(Session.I18N.CustomTokens, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup(Session.I18N.CustomOverlays, System.Windows.Forms.HorizontalAlignment.Left);
 			this.Toolbar = new System.Windows.Forms.ToolStrip();
 			this.DetailsBtn = new System.Windows.Forms.ToolStripButton();
 			this.DamageBtn = new System.Windows.Forms.ToolStripButton();
@@ -242,7 +242,7 @@
 			this.Toolbar.Name = "Toolbar";
 			this.Toolbar.Size = new System.Drawing.Size(850, 25);
 			this.Toolbar.TabIndex = 0;
-			this.Toolbar.Text = "toolStrip1";
+			this.Toolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// DetailsBtn
 			// 
@@ -251,7 +251,7 @@
 			this.DetailsBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.DetailsBtn.Name = "DetailsBtn";
 			this.DetailsBtn.Size = new System.Drawing.Size(46, 22);
-			this.DetailsBtn.Text = "Details";
+			this.DetailsBtn.Text = Session.I18N.Details;
 			this.DetailsBtn.Click += new System.EventHandler(this.DetailsBtn_Click);
 			// 
 			// DamageBtn
@@ -261,7 +261,7 @@
 			this.DamageBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.DamageBtn.Name = "DamageBtn";
 			this.DamageBtn.Size = new System.Drawing.Size(55, 22);
-			this.DamageBtn.Text = "Damage";
+			this.DamageBtn.Text = Session.I18N.Damage;
 			this.DamageBtn.Click += new System.EventHandler(this.DamageBtn_Click);
 			// 
 			// HealBtn
@@ -271,7 +271,7 @@
 			this.HealBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.HealBtn.Name = "HealBtn";
 			this.HealBtn.Size = new System.Drawing.Size(35, 22);
-			this.HealBtn.Text = "Heal";
+			this.HealBtn.Text = Session.I18N.Heal;
 			this.HealBtn.Click += new System.EventHandler(this.HealBtn_Click);
 			// 
 			// EffectMenu
@@ -283,14 +283,14 @@
 			this.EffectMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EffectMenu.Name = "EffectMenu";
 			this.EffectMenu.Size = new System.Drawing.Size(75, 22);
-			this.EffectMenu.Text = "Add Effect";
+			this.EffectMenu.Text = Session.I18N.AddEffect;
 			this.EffectMenu.DropDownOpening += new System.EventHandler(this.EffectMenu_DropDownOpening);
 			// 
 			// effectToolStripMenuItem
 			// 
 			this.effectToolStripMenuItem.Name = "effectToolStripMenuItem";
 			this.effectToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
-			this.effectToolStripMenuItem.Text = "[effect]";
+			this.effectToolStripMenuItem.Text = "["+ Session.I18N.Effect.ToLower() + "]";
 			// 
 			// toolStripSeparator18
 			// 
@@ -304,7 +304,7 @@
 			this.NextInitBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.NextInitBtn.Name = "NextInitBtn";
 			this.NextInitBtn.Size = new System.Drawing.Size(63, 22);
-			this.NextInitBtn.Text = "Next Turn";
+			this.NextInitBtn.Text = Session.I18N.NextTurn;
 			this.NextInitBtn.Click += new System.EventHandler(this.NextInitBtn_Click);
 			// 
 			// DelayBtn
@@ -314,7 +314,7 @@
 			this.DelayBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.DelayBtn.Name = "DelayBtn";
 			this.DelayBtn.Size = new System.Drawing.Size(78, 22);
-			this.DelayBtn.Text = "Delay Action";
+			this.DelayBtn.Text = Session.I18N.DelayAction;
 			this.DelayBtn.Click += new System.EventHandler(this.DelayBtn_Click);
 			// 
 			// toolStripSeparator1
@@ -340,28 +340,28 @@
 			this.CombatantsBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.CombatantsBtn.Name = "CombatantsBtn";
 			this.CombatantsBtn.Size = new System.Drawing.Size(85, 22);
-			this.CombatantsBtn.Text = "Combatants";
+			this.CombatantsBtn.Text = Session.I18N.Combatants;
 			this.CombatantsBtn.DropDownOpening += new System.EventHandler(this.CombatantsBtn_DropDownOpening);
 			// 
 			// CombatantsAdd
 			// 
 			this.CombatantsAdd.Name = "CombatantsAdd";
 			this.CombatantsAdd.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsAdd.Text = "Add Combatant...";
+			this.CombatantsAdd.Text = Session.I18N.AddCombatant;
 			this.CombatantsAdd.Click += new System.EventHandler(this.CombatantsAdd_Click);
 			// 
 			// CombatantsAddToken
 			// 
 			this.CombatantsAddToken.Name = "CombatantsAddToken";
 			this.CombatantsAddToken.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsAddToken.Text = "Add Map Token...";
+			this.CombatantsAddToken.Text = Session.I18N.AddMapToken;
 			this.CombatantsAddToken.Click += new System.EventHandler(this.CombatantsAddCustom_Click);
 			// 
 			// CombatantsAddOverlay
 			// 
 			this.CombatantsAddOverlay.Name = "CombatantsAddOverlay";
 			this.CombatantsAddOverlay.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsAddOverlay.Text = "Add Map Overlay...";
+			this.CombatantsAddOverlay.Text = Session.I18N.AddMapOverlay;
 			this.CombatantsAddOverlay.Click += new System.EventHandler(this.CombatantsAddOverlay_Click);
 			// 
 			// toolStripSeparator6
@@ -373,7 +373,7 @@
 			// 
 			this.CombatantsWaves.Name = "CombatantsWaves";
 			this.CombatantsWaves.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsWaves.Text = "Waves";
+			this.CombatantsWaves.Text = Session.I18N.Waves;
 			// 
 			// toolStripSeparator26
 			// 
@@ -384,7 +384,7 @@
 			// 
 			this.CombatantsRemove.Name = "CombatantsRemove";
 			this.CombatantsRemove.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsRemove.Text = "Remove Selected";
+			this.CombatantsRemove.Text = Session.I18N.RemoveSelected;
 			this.CombatantsRemove.Click += new System.EventHandler(this.CombatantsRemove_Click);
 			// 
 			// toolStripSeparator12
@@ -396,14 +396,14 @@
 			// 
 			this.CombatantsHideAll.Name = "CombatantsHideAll";
 			this.CombatantsHideAll.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsHideAll.Text = "Hide All";
+			this.CombatantsHideAll.Text = Session.I18N.HideAll;
 			this.CombatantsHideAll.Click += new System.EventHandler(this.CombatantsHideAll_Click);
 			// 
 			// CombatantsShowAll
 			// 
 			this.CombatantsShowAll.Name = "CombatantsShowAll";
 			this.CombatantsShowAll.Size = new System.Drawing.Size(175, 22);
-			this.CombatantsShowAll.Text = "Show All";
+			this.CombatantsShowAll.Text = Session.I18N.ShowAll;
 			this.CombatantsShowAll.Click += new System.EventHandler(this.CombatantsShowAll_Click);
 			// 
 			// MapMenu
@@ -433,14 +433,14 @@
 			this.MapMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.MapMenu.Name = "MapMenu";
 			this.MapMenu.Size = new System.Drawing.Size(44, 22);
-			this.MapMenu.Text = "Map";
+			this.MapMenu.Text = Session.I18N.Map;
 			this.MapMenu.DropDownOpening += new System.EventHandler(this.MapMenu_DropDownOpening);
 			// 
 			// ShowMap
 			// 
 			this.ShowMap.Name = "ShowMap";
 			this.ShowMap.Size = new System.Drawing.Size(182, 22);
-			this.ShowMap.Text = "Show Map";
+			this.ShowMap.Text = Session.I18N.Show + " " + Session.I18N.Map;
 			this.ShowMap.Click += new System.EventHandler(this.ShowMap_Click);
 			// 
 			// toolStripSeparator10
@@ -459,27 +459,27 @@
 			this.MapFog.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.MapFog.Name = "MapFog";
 			this.MapFog.Size = new System.Drawing.Size(182, 22);
-			this.MapFog.Text = "Fog of War";
+			this.MapFog.Text = Session.I18N.FogOfWar;
 			// 
 			// MapFogAllCreatures
 			// 
 			this.MapFogAllCreatures.Name = "MapFogAllCreatures";
 			this.MapFogAllCreatures.Size = new System.Drawing.Size(221, 22);
-			this.MapFogAllCreatures.Text = "Show All Creatures";
+			this.MapFogAllCreatures.Text = Session.I18N.Show + " " + Session.I18N.AllCreatures;
 			this.MapFogAllCreatures.Click += new System.EventHandler(this.MapFogAllCreatures_Click);
 			// 
 			// MapFogVisibleCreatures
 			// 
 			this.MapFogVisibleCreatures.Name = "MapFogVisibleCreatures";
 			this.MapFogVisibleCreatures.Size = new System.Drawing.Size(221, 22);
-			this.MapFogVisibleCreatures.Text = "Show Visible Creatures Only";
+			this.MapFogVisibleCreatures.Text = Session.I18N.Show + " " + Session.I18N.VisibleCreaturesOnly;
 			this.MapFogVisibleCreatures.Click += new System.EventHandler(this.MapFogVisibleCreatures_Click);
 			// 
 			// MapFogHideCreatures
 			// 
 			this.MapFogHideCreatures.Name = "MapFogHideCreatures";
 			this.MapFogHideCreatures.Size = new System.Drawing.Size(221, 22);
-			this.MapFogHideCreatures.Text = "Hide All Creatures";
+			this.MapFogHideCreatures.Text = Session.I18N.Hide + " " + Session.I18N.AllCreatures;
 			this.MapFogHideCreatures.Click += new System.EventHandler(this.MapFogHideCreatures_Click);
 			// 
 			// toolStripSeparator15
@@ -491,42 +491,42 @@
 			// 
 			this.MapLOS.Name = "MapLOS";
 			this.MapLOS.Size = new System.Drawing.Size(182, 22);
-			this.MapLOS.Text = "Show Line of Sight";
+			this.MapLOS.Text = Session.I18N.Show + " " + Session.I18N.LineOfSight;
 			this.MapLOS.Click += new System.EventHandler(this.MapLOS_Click);
 			// 
 			// MapGrid
 			// 
 			this.MapGrid.Name = "MapGrid";
 			this.MapGrid.Size = new System.Drawing.Size(182, 22);
-			this.MapGrid.Text = "Show Grid";
+			this.MapGrid.Text = Session.I18N.Show + " " + Session.I18N.Grid;
 			this.MapGrid.Click += new System.EventHandler(this.MapGrid_Click);
 			// 
 			// MapGridLabels
 			// 
 			this.MapGridLabels.Name = "MapGridLabels";
 			this.MapGridLabels.Size = new System.Drawing.Size(182, 22);
-			this.MapGridLabels.Text = "Show Grid Labels";
+			this.MapGridLabels.Text = Session.I18N.Show + " " + Session.I18N.GridLabels;
 			this.MapGridLabels.Click += new System.EventHandler(this.MapGridLabels_Click);
 			// 
 			// MapHealth
 			// 
 			this.MapHealth.Name = "MapHealth";
 			this.MapHealth.Size = new System.Drawing.Size(182, 22);
-			this.MapHealth.Text = "Show Health Bars";
+			this.MapHealth.Text = Session.I18N.Show + " " + Session.I18N.HealthBars;
 			this.MapHealth.Click += new System.EventHandler(this.MapHealth_Click);
 			// 
 			// MapConditions
 			// 
 			this.MapConditions.Name = "MapConditions";
 			this.MapConditions.Size = new System.Drawing.Size(182, 22);
-			this.MapConditions.Text = "Show Conditions";
+			this.MapConditions.Text = Session.I18N.Show + " " + Session.I18N.Conditions;
 			this.MapConditions.Click += new System.EventHandler(this.MapConditions_Click);
 			// 
 			// MapPictureTokens
 			// 
 			this.MapPictureTokens.Name = "MapPictureTokens";
 			this.MapPictureTokens.Size = new System.Drawing.Size(182, 22);
-			this.MapPictureTokens.Text = "Show Picture Tokens";
+			this.MapPictureTokens.Text = Session.I18N.Show + " " + Session.I18N.PictureTokens;
 			this.MapPictureTokens.Click += new System.EventHandler(this.MapPictureTokens_Click);
 			// 
 			// toolStripSeparator7
@@ -538,14 +538,14 @@
 			// 
 			this.MapNavigate.Name = "MapNavigate";
 			this.MapNavigate.Size = new System.Drawing.Size(182, 22);
-			this.MapNavigate.Text = "Scroll and Zoom";
+			this.MapNavigate.Text = Session.I18N.ScrollZoom;
 			this.MapNavigate.Click += new System.EventHandler(this.MapNavigate_Click);
 			// 
 			// MapReset
 			// 
 			this.MapReset.Name = "MapReset";
 			this.MapReset.Size = new System.Drawing.Size(182, 22);
-			this.MapReset.Text = "Reset View";
+			this.MapReset.Text = Session.I18N.ResetView;
 			this.MapReset.Click += new System.EventHandler(this.MapReset_Click);
 			// 
 			// toolStripSeparator8
@@ -557,14 +557,14 @@
 			// 
 			this.MapDrawing.Name = "MapDrawing";
 			this.MapDrawing.Size = new System.Drawing.Size(182, 22);
-			this.MapDrawing.Text = "Allow Drawing";
+			this.MapDrawing.Text = Session.I18N.AllowDrawing;
 			this.MapDrawing.Click += new System.EventHandler(this.MapDrawing_Click);
 			// 
 			// MapClearDrawings
 			// 
 			this.MapClearDrawings.Name = "MapClearDrawings";
 			this.MapClearDrawings.Size = new System.Drawing.Size(182, 22);
-			this.MapClearDrawings.Text = "Clear Drawings";
+			this.MapClearDrawings.Text = Session.I18N.ClearDrawings;
 			this.MapClearDrawings.Click += new System.EventHandler(this.MapClearDrawings_Click);
 			// 
 			// toolStripSeparator19
@@ -576,14 +576,14 @@
 			// 
 			this.MapPrint.Name = "MapPrint";
 			this.MapPrint.Size = new System.Drawing.Size(182, 22);
-			this.MapPrint.Text = "Print";
+			this.MapPrint.Text = Session.I18N.Print;
 			this.MapPrint.Click += new System.EventHandler(this.MapPrint_Click);
 			// 
 			// MapExport
 			// 
 			this.MapExport.Name = "MapExport";
 			this.MapExport.Size = new System.Drawing.Size(182, 22);
-			this.MapExport.Text = "Export Screenshot";
+			this.MapExport.Text = Session.I18N.ExportScreenshot;
 			this.MapExport.Click += new System.EventHandler(this.MapExport_Click);
 			// 
 			// PlayerViewMapMenu
@@ -607,21 +607,21 @@
 			this.PlayerViewMapMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.PlayerViewMapMenu.Name = "PlayerViewMapMenu";
 			this.PlayerViewMapMenu.Size = new System.Drawing.Size(80, 22);
-			this.PlayerViewMapMenu.Text = "Player View";
+			this.PlayerViewMapMenu.Text = Session.I18N.PlayerView;
 			this.PlayerViewMapMenu.DropDownOpening += new System.EventHandler(this.PlayerViewMapMenu_DropDownOpening);
 			// 
 			// PlayerViewMap
 			// 
 			this.PlayerViewMap.Name = "PlayerViewMap";
 			this.PlayerViewMap.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewMap.Text = "Show Map";
+			this.PlayerViewMap.Text = Session.I18N.Show + " " + Session.I18N.Map;
 			this.PlayerViewMap.Click += new System.EventHandler(this.PlayerViewMap_Click);
 			// 
 			// PlayerViewInitList
 			// 
 			this.PlayerViewInitList.Name = "PlayerViewInitList";
 			this.PlayerViewInitList.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewInitList.Text = "Show Initiative List";
+			this.PlayerViewInitList.Text = Session.I18N.Show + " " + "Initiative List";
 			this.PlayerViewInitList.Click += new System.EventHandler(this.PlayerViewInitList_Click);
 			// 
 			// toolStripSeparator9
@@ -646,21 +646,21 @@
 			// 
 			this.PlayerFogAll.Name = "PlayerFogAll";
 			this.PlayerFogAll.Size = new System.Drawing.Size(221, 22);
-			this.PlayerFogAll.Text = "Show All Creatures";
+			this.PlayerFogAll.Text = Session.I18N.Show + " " + "All Creatures";
 			this.PlayerFogAll.Click += new System.EventHandler(this.PlayerFogAll_Click);
 			// 
 			// PlayerFogVisible
 			// 
 			this.PlayerFogVisible.Name = "PlayerFogVisible";
 			this.PlayerFogVisible.Size = new System.Drawing.Size(221, 22);
-			this.PlayerFogVisible.Text = "Show Visible Creatures Only";
+			this.PlayerFogVisible.Text = Session.I18N.Show + " " + "Visible Creatures Only";
 			this.PlayerFogVisible.Click += new System.EventHandler(this.PlayerFogVisible_Click);
 			// 
 			// PlayerFogNone
 			// 
 			this.PlayerFogNone.Name = "PlayerFogNone";
 			this.PlayerFogNone.Size = new System.Drawing.Size(221, 22);
-			this.PlayerFogNone.Text = "Hide All Creatures";
+			this.PlayerFogNone.Text = Session.I18N.Hide + " " + "All Creatures";
 			this.PlayerFogNone.Click += new System.EventHandler(this.PlayerFogNone_Click);
 			// 
 			// toolStripSeparator16
@@ -672,42 +672,42 @@
 			// 
 			this.PlayerViewLOS.Name = "PlayerViewLOS";
 			this.PlayerViewLOS.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewLOS.Text = "Show Line of Sight";
+			this.PlayerViewLOS.Text = Session.I18N.Show + " " + "Line of Sight";
 			this.PlayerViewLOS.Click += new System.EventHandler(this.PlayerViewLOS_Click);
 			// 
 			// PlayerViewGrid
 			// 
 			this.PlayerViewGrid.Name = "PlayerViewGrid";
 			this.PlayerViewGrid.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewGrid.Text = "Show Grid";
+			this.PlayerViewGrid.Text = Session.I18N.Show + " " + "Grid";
 			this.PlayerViewGrid.Click += new System.EventHandler(this.PlayerViewGrid_Click);
 			// 
 			// PlayerViewGridLabels
 			// 
 			this.PlayerViewGridLabels.Name = "PlayerViewGridLabels";
 			this.PlayerViewGridLabels.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewGridLabels.Text = "Show Grid Labels";
+			this.PlayerViewGridLabels.Text = Session.I18N.Show + " " + "Grid Labels";
 			this.PlayerViewGridLabels.Click += new System.EventHandler(this.PlayerViewGridLabels_Click);
 			// 
 			// PlayerHealth
 			// 
 			this.PlayerHealth.Name = "PlayerHealth";
 			this.PlayerHealth.Size = new System.Drawing.Size(215, 22);
-			this.PlayerHealth.Text = "Show Health Bars";
+			this.PlayerHealth.Text = Session.I18N.Show + " " + "Health Bars";
 			this.PlayerHealth.Click += new System.EventHandler(this.PlayerHealth_Click);
 			// 
 			// PlayerConditions
 			// 
 			this.PlayerConditions.Name = "PlayerConditions";
 			this.PlayerConditions.Size = new System.Drawing.Size(215, 22);
-			this.PlayerConditions.Text = "Show Conditions";
+			this.PlayerConditions.Text = Session.I18N.Show + " " + "Conditions";
 			this.PlayerConditions.Click += new System.EventHandler(this.PlayerConditions_Click);
 			// 
 			// PlayerPictureTokens
 			// 
 			this.PlayerPictureTokens.Name = "PlayerPictureTokens";
 			this.PlayerPictureTokens.Size = new System.Drawing.Size(215, 22);
-			this.PlayerPictureTokens.Text = "Show Picture Tokens";
+			this.PlayerPictureTokens.Text = Session.I18N.Show + " " + "Picture Tokens";
 			this.PlayerPictureTokens.Click += new System.EventHandler(this.PlayerPictureTokens_Click);
 			// 
 			// toolStripSeparator17
@@ -719,7 +719,7 @@
 			// 
 			this.PlayerLabels.Name = "PlayerLabels";
 			this.PlayerLabels.Size = new System.Drawing.Size(215, 22);
-			this.PlayerLabels.Text = "Show Detailed Information";
+			this.PlayerLabels.Text = Session.I18N.Show + " " + "Detailed Information";
 			this.PlayerLabels.Click += new System.EventHandler(this.PlayerLabels_Click);
 			// 
 			// PlayerViewNoMapMenu
@@ -732,21 +732,21 @@
 			this.PlayerViewNoMapMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.PlayerViewNoMapMenu.Name = "PlayerViewNoMapMenu";
 			this.PlayerViewNoMapMenu.Size = new System.Drawing.Size(80, 22);
-			this.PlayerViewNoMapMenu.Text = "Player View";
+			this.PlayerViewNoMapMenu.Text = Session.I18N.PlayerView;
 			this.PlayerViewNoMapMenu.DropDownOpening += new System.EventHandler(this.PlayerViewNoMapMenu_DropDownOpening);
 			// 
 			// PlayerViewNoMapShowInitiativeList
 			// 
 			this.PlayerViewNoMapShowInitiativeList.Name = "PlayerViewNoMapShowInitiativeList";
 			this.PlayerViewNoMapShowInitiativeList.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewNoMapShowInitiativeList.Text = "Show Initiative List";
+			this.PlayerViewNoMapShowInitiativeList.Text = Session.I18N.Show + " " + "Initiative List";
 			this.PlayerViewNoMapShowInitiativeList.Click += new System.EventHandler(this.PlayerViewNoMapShowInitiativeList_Click);
 			// 
 			// PlayerViewNoMapShowLabels
 			// 
 			this.PlayerViewNoMapShowLabels.Name = "PlayerViewNoMapShowLabels";
 			this.PlayerViewNoMapShowLabels.Size = new System.Drawing.Size(215, 22);
-			this.PlayerViewNoMapShowLabels.Text = "Show Detailed Information";
+			this.PlayerViewNoMapShowLabels.Text = Session.I18N.Show + " " + "Detailed Information";
 			this.PlayerViewNoMapShowLabels.Click += new System.EventHandler(this.PlayerViewNoMapShowLabels_Click);
 			// 
 			// ToolsMenu
@@ -761,7 +761,7 @@
 			this.ToolsMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.ToolsMenu.Name = "ToolsMenu";
 			this.ToolsMenu.Size = new System.Drawing.Size(47, 22);
-			this.ToolsMenu.Text = "Tools";
+			this.ToolsMenu.Text = Session.I18N.Tools;
 			this.ToolsMenu.Click += new System.EventHandler(this.ToolsMenu_DopDownOpening);
 			// 
 			// ToolsEffects
@@ -789,13 +789,13 @@
             this.addinsToolStripMenuItem});
 			this.ToolsAddIns.Name = "ToolsAddIns";
 			this.ToolsAddIns.Size = new System.Drawing.Size(159, 22);
-			this.ToolsAddIns.Text = "Add-Ins";
+			this.ToolsAddIns.Text = Session.I18N.AddIns;
 			// 
 			// addinsToolStripMenuItem
 			// 
 			this.addinsToolStripMenuItem.Name = "addinsToolStripMenuItem";
 			this.addinsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-			this.addinsToolStripMenuItem.Text = "[add-ins]";
+			this.addinsToolStripMenuItem.Text = "[" + Session.I18N.AddIns.ToLower() + "]";
 			// 
 			// OptionsMenu
 			// 
@@ -826,7 +826,7 @@
 			// 
 			this.OptionsShowInit.Name = "OptionsShowInit";
 			this.OptionsShowInit.Size = new System.Drawing.Size(229, 22);
-			this.OptionsShowInit.Text = "Show Initiative Gauge";
+			this.OptionsShowInit.Text = Session.I18N.Show + " " + "Initiative Gauge";
 			this.OptionsShowInit.Click += new System.EventHandler(this.OptionsShowInit_Click);
 			// 
 			// toolStripSeparator13
@@ -1104,7 +1104,7 @@
 			// 
 			this.ListDetails.Name = "ListDetails";
 			this.ListDetails.Size = new System.Drawing.Size(184, 22);
-			this.ListDetails.Text = "Details";
+			this.ListDetails.Text = Session.I18N.Details;
 			this.ListDetails.Click += new System.EventHandler(this.ListDetails_Click);
 			// 
 			// toolStripSeparator14
@@ -1168,7 +1168,7 @@
             this.ListRemoveCombat});
 			this.ListRemove.Name = "ListRemove";
 			this.ListRemove.Size = new System.Drawing.Size(184, 22);
-			this.ListRemove.Text = "Remove";
+			this.ListRemove.Text = Session.I18N.Remove;
 			// 
 			// ListRemoveMap
 			// 
@@ -1383,7 +1383,7 @@
 			// 
 			this.MapDetails.Name = "MapDetails";
 			this.MapDetails.Size = new System.Drawing.Size(184, 22);
-			this.MapDetails.Text = "Details";
+			this.MapDetails.Text = Session.I18N.Details;
 			this.MapDetails.Click += new System.EventHandler(this.MapDetails_Click);
 			// 
 			// toolStripMenuItem2
@@ -1454,7 +1454,7 @@
             this.MapRemoveCombat});
 			this.MapRemove.Name = "MapRemove";
 			this.MapRemove.Size = new System.Drawing.Size(184, 22);
-			this.MapRemove.Text = "Remove";
+			this.MapRemove.Text = Session.I18N.Remove;
 			// 
 			// MapRemoveMap
 			// 
@@ -1644,7 +1644,7 @@
 			this.InfoBtn.Name = "InfoBtn";
 			this.InfoBtn.Size = new System.Drawing.Size(75, 23);
 			this.InfoBtn.TabIndex = 2;
-			this.InfoBtn.Text = "Information";
+			this.InfoBtn.Text = Session.I18N.Information;
 			this.InfoBtn.UseVisualStyleBackColor = true;
 			this.InfoBtn.Click += new System.EventHandler(this.InfoBtn_Click);
 			// 
@@ -1655,7 +1655,7 @@
 			this.DieRollerBtn.Name = "DieRollerBtn";
 			this.DieRollerBtn.Size = new System.Drawing.Size(75, 23);
 			this.DieRollerBtn.TabIndex = 3;
-			this.DieRollerBtn.Text = "Die Roller";
+			this.DieRollerBtn.Text = Session.I18N.DieRoller;
 			this.DieRollerBtn.UseVisualStyleBackColor = true;
 			this.DieRollerBtn.Click += new System.EventHandler(this.DieRollerBtn_Click);
 			// 

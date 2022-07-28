@@ -57,7 +57,7 @@ namespace Masterplan.UI
 		private void AddCreature_Click(object sender, EventArgs e)
 		{
 			CustomCreature cc = new CustomCreature();
-			cc.Name = "New Creature";
+			cc.Name = Session.I18N.NewCreature;
 
 			CreatureBuilderForm dlg = new CreatureBuilderForm(cc);
 			if (dlg.ShowDialog() == DialogResult.OK)

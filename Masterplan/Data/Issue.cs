@@ -53,18 +53,18 @@ namespace Masterplan.Data
 				if (fPoint.Element == null)
 					return "";
 
-				string name = "game element";
+				string name = Session.I18N.GameElement;
 				if (fPoint.Element is Encounter)
-					name = "encounter";
+					name = Session.I18N.Encounter.ToLower();
 				if (fPoint.Element is TrapElement)
 				{
 					TrapElement te = fPoint.Element as TrapElement;
-					name = (te.Trap.Type == TrapType.Trap) ? "trap" : "hazard";
+					name = (te.Trap.Type == TrapType.Trap) ? Session.I18N.Trap : Session.I18N.Hazard;
 				}
 				if (fPoint.Element is SkillChallenge)
-					name = "skill challenge";
+					name = Session.I18N.SkillChallenge.ToLower();
 				if (fPoint.Element is Quest)
-					name = "quest";
+					name = Session.I18N.Quest.ToLower();
 
 				int level = Workspace.GetPartyLevel(fPoint);
 
@@ -72,9 +72,9 @@ namespace Masterplan.Data
 				switch (diff)
 				{
 					case Difficulty.Trivial:
-						return "This " + name + " is too easy for a party of level " + level + ".";
+						return Session.I18N.This + " " + name + " " + Session.I18N.LabelTooEasy + " " + level + ".";
 					case Difficulty.Extreme:
-						return "This " + name + " is too difficult for a party of level " + level + ".";
+						return Session.I18N.This + " " + name + " " + Session.I18N.LabelTooDifficult + " " + level + ".";
 				}
 
 				return "";
@@ -136,10 +136,10 @@ namespace Masterplan.Data
 					int diff = slot.Card.Level - level;
 
 					if (diff < -4)
-						return slot.Card.Title + " is more than four levels lower than the party level.";
+						return slot.Card.Title + " " + Session.I18N.LabelMoreThanFourLevels + " " + Session.I18N.Lower.ToLower() + " " + Session.I18N.LabelThanPartyLevel;
 
 					if (diff > 5)
-						return slot.Card.Title + " is more than five levels higher than the party level.";
+						return slot.Card.Title + " " + Session.I18N.LabelMoreThanFiveLevels + " " + Session.I18N.Higher.ToLower() + " " + Session.I18N.LabelThanPartyLevel;
 				}
 
 				return "";
@@ -195,7 +195,7 @@ namespace Masterplan.Data
 					return "";
 
 				if (sc.Skills.Count == 0)
-					return "No skills are defined for this skill challenge.";
+					return Session.I18N.NoSkillDefined;
 
 				return "";
 			}
@@ -250,7 +250,7 @@ namespace Masterplan.Data
 					return "";
 
 				if (fParcel.Name == "")
-					return "A treasure parcel in " + fPoint.Name + " is undefined.";
+					return Session.I18N.TreasureParcelIn + " " + fPoint.Name + " " + Session.I18N.IsUndefined + ".";
 
 				return "";
 			}
@@ -342,10 +342,10 @@ namespace Masterplan.Data
 				string str = "";
 
 				if (parcels_gained < lower)
-					str = "Too few treasure parcels are available, compared to the amount of XP given.";
+					str = Session.I18N.TooFewXp;
 
 				if (parcels_gained > upper)
-					str = "Too many treasure parcels are available, compared to the amount of XP given.";
+					str = Session.I18N.TooManyXp;
 
 				if (str != "")
 				{
@@ -360,15 +360,15 @@ namespace Masterplan.Data
 					}
 
 					str += Environment.NewLine;
-					str += "This plot";
+					str += Session.I18N.ThisPlot;
 					if (has_subplots)
-						str += " (and its subplots)";
-					str += " should contain ";
+						str += " (" + Session.I18N.AndSubPlots + ")";
+					str += " " + Session.I18N.ShouldContain + " ";
 					if (lower == upper)
 						str += upper.ToString();
 					else
 						str += lower + " - " + upper;
-					str += " parcels; currently " + parcels_gained + " are available.";
+					str += " " + " " + Session.I18N.Parcels + "; " + Session.I18N.Currently + " " + parcels_gained + " " + Session.I18N.AreAvailable + ".";
 				}
 
 				return str;

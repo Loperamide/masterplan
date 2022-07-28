@@ -248,12 +248,12 @@ namespace Masterplan.Data
 					break;
 				case DurationType.SaveEnds:
 					{
-						str = "save ends";
+						str = Session.I18N.SaveEnds;
 
 						if (SavingThrowModifier != 0)
 						{
 							string sign = (SavingThrowModifier >= 0) ? "+" : "";
-							str += " with " + sign + SavingThrowModifier + " mod";
+							str += " " + Session.I18N.With + " " + sign + SavingThrowModifier + " " + Session.I18N.Mod;
 						}
 					}
 					break;
@@ -262,21 +262,21 @@ namespace Masterplan.Data
 						string name = "";
 						if (fDurationCreatureID == Guid.Empty)
 						{
-							name = "someone else's";
+							name = Session.I18N.SomeoneElses;
 						}
 						else
 						{
 							if (enc != null)
 							{
-								name = enc.WhoIs(fDurationCreatureID) + "'s";
+								name = enc.WhoIs(fDurationCreatureID) + Session.I18N.ComaS;
 							}
 							else
 							{
-								name = "my";
+								name = Session.I18N.My;
 							}
 						}
 
-						str += "until the start of " + name + " next turn";
+						str += Session.I18N.UntilStartOf + " " + name + " " + Session.I18N.NextTurn;
 					}
 					break;
 				case DurationType.EndOfTurn:
@@ -284,21 +284,21 @@ namespace Masterplan.Data
 						string name = "";
 						if (fDurationCreatureID == Guid.Empty)
 						{
-							name = "someone else's";
+							name = Session.I18N.SomeoneElses;
 						}
 						else
 						{
 							if (enc != null)
 							{
-								name = enc.WhoIs(fDurationCreatureID) + "'s";
+								name = enc.WhoIs(fDurationCreatureID) + Session.I18N.ComaS;
 							}
 							else
 							{
-								name = "my";
+								name = Session.I18N.My;
 							}
 						}
 
-						str += "until the end of " + name + " next turn";
+						str += Session.I18N.UntilEndOf + " " + name + " " + Session.I18N.NextTurn;
 					}
 					break;
 			}
@@ -362,12 +362,12 @@ namespace Masterplan.Data
 					{
 						if (fDamageType == DamageType.Untyped)
 						{
-							str = fValue + " ongoing damage";
+							str = fValue + " " + Session.I18N.OngoingDamage;
 						}
 						else
 						{
 							string dmg = fDamageType.ToString().ToLower();
-							str = fValue + " ongoing " + dmg + " damage";
+							str = fValue + " " + Session.I18N.Ongoing + " " + dmg + " " + Session.I18N.Damage;
 						}
 					}
 					break;
@@ -380,7 +380,7 @@ namespace Masterplan.Data
 						string defences = "";
 						if (fDefences.Count == 4)
 						{
-							defences = "defences";
+							defences = Session.I18N.OngoingDefences;
 						}
 						else
 						{
@@ -393,17 +393,17 @@ namespace Masterplan.Data
 							}
 						}
 
-						str += " to " + defences;
+						str += " " + Session.I18N.To + " " + defences;
 					}
 					break;
 				case OngoingType.DamageModifier:
 					str = fDamageModifier.ToString();
 					break;
 				case OngoingType.Regeneration:
-					str = "Regeneration " + fRegeneration.Value;
+					str = Session.I18N.Regeneration + " " + fRegeneration.Value;
 					break;
 				case OngoingType.Aura:
-					str = "Aura " + fAura.Radius + ": " + fAura.Description;
+					str = Session.I18N.Aura + " " + fAura.Radius + ": " + fAura.Description;
 					break;
 			}
 

@@ -265,20 +265,20 @@ namespace Masterplan.Controls
 						{
 							case DemographicsSource.Creatures:
 								{
-									fBreakdown["Artillery"] = 0;
-									fBreakdown["Brute"] = 0;
-									fBreakdown["Controller"] = 0;
-									fBreakdown["Lurker"] = 0;
-									fBreakdown["Skirmisher"] = 0;
-									fBreakdown["Soldier"] = 0;
+									fBreakdown[Session.I18N.Artillery] = 0;
+									fBreakdown[Session.I18N.Brute] = 0;
+									fBreakdown[Session.I18N.Controller] = 0;
+									fBreakdown[Session.I18N.Lurker] = 0;
+									fBreakdown[Session.I18N.Skirmisher] = 0;
+									fBreakdown[Session.I18N.Soldier] = 0;
 								}
 								break;
 							case DemographicsSource.Traps:
 								{
-									fBreakdown["Blaster"] = 0;
-									fBreakdown["Lurker"] = 0;
-									fBreakdown["Obstacle"] = 0;
-									fBreakdown["Warder"] = 0;
+									fBreakdown[Session.I18N.Blaster] = 0;
+									fBreakdown[Session.I18N.Lurker] = 0;
+									fBreakdown[Session.I18N.Obstacle] = 0;
+									fBreakdown[Session.I18N.Warder] = 0;
 								}
 								break;
 						}
@@ -286,11 +286,11 @@ namespace Masterplan.Controls
 					break;
 				case DemographicsMode.Status:
 					{
-						fBreakdown["Standard"] = 0;
-						fBreakdown["Elite"] = 0;
-						fBreakdown["Solo"] = 0;
-						fBreakdown["Minion"] = 0;
-						fBreakdown["Leader"] = 0;
+						fBreakdown[Session.I18N.Standard] = 0;
+						fBreakdown[Session.I18N.Elite] = 0;
+						fBreakdown[Session.I18N.Solo] = 0;
+						fBreakdown[Session.I18N.Minion] = 0;
+						fBreakdown[Session.I18N.Leader] = 0;
 					}
 					break;
 			}
@@ -418,7 +418,7 @@ namespace Masterplan.Controls
 							add(cr.Flag.ToString());
 
 							if (cr.Leader)
-								add("Leader");
+								add(Session.I18N.Leader);
 						}
 						break;
 				}
@@ -437,7 +437,7 @@ namespace Masterplan.Controls
 						break;
 					case DemographicsMode.Status:
 						{
-							add("Minion");
+							add(Session.I18N.Minion);
 						}
 						break;
 				}

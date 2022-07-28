@@ -55,7 +55,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(81, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Creature Name:";
+			this.NameLbl.Text = Session.I18N.CreatureName + ":";
 			// 
 			// NameBox
 			// 
@@ -87,7 +87,7 @@
 			this.InfoPage.Padding = new System.Windows.Forms.Padding(3);
 			this.InfoPage.Size = new System.Drawing.Size(309, 177);
 			this.InfoPage.TabIndex = 2;
-			this.InfoPage.Text = "Information";
+			this.InfoPage.Text = Session.I18N.Information;
 			this.InfoPage.UseVisualStyleBackColor = true;
 			// 
 			// InfoList
@@ -109,7 +109,7 @@
 			// 
 			// InfoHdr
 			// 
-			this.InfoHdr.Text = "Information";
+			this.InfoHdr.Text = Session.I18N.Information;
 			this.InfoHdr.Width = 273;
 			// 
 			// LevelToolbar
@@ -122,7 +122,7 @@
 			this.LevelToolbar.Name = "LevelToolbar";
 			this.LevelToolbar.Size = new System.Drawing.Size(303, 25);
 			this.LevelToolbar.TabIndex = 0;
-			this.LevelToolbar.Text = "toolStrip1";
+			this.LevelToolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// AddBtn
 			// 
@@ -131,7 +131,7 @@
 			this.AddBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.AddBtn.Name = "AddBtn";
 			this.AddBtn.Size = new System.Drawing.Size(33, 22);
-			this.AddBtn.Text = "Add";
+			this.AddBtn.Text = Session.I18N.Add;
 			this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
 			// 
 			// RemoveBtn
@@ -141,7 +141,7 @@
 			this.RemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.RemoveBtn.Name = "RemoveBtn";
 			this.RemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.RemoveBtn.Text = "Remove";
+			this.RemoveBtn.Text = Session.I18N.Remove;
 			this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
 			// 
 			// EditBtn
@@ -151,7 +151,7 @@
 			this.EditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EditBtn.Name = "EditBtn";
 			this.EditBtn.Size = new System.Drawing.Size(31, 22);
-			this.EditBtn.Text = "Edit";
+			this.EditBtn.Text = Session.I18N.Edit;
 			this.EditBtn.Click += new System.EventHandler(this.FeatureEditBtn_Click);
 			// 
 			// OKBtn
@@ -162,7 +162,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 5;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -174,7 +174,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 6;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// SkillLbl
@@ -184,7 +184,7 @@
 			this.SkillLbl.Name = "SkillLbl";
 			this.SkillLbl.Size = new System.Drawing.Size(60, 13);
 			this.SkillLbl.TabIndex = 2;
-			this.SkillLbl.Text = "Skill Name:";
+			this.SkillLbl.Text = Session.I18N.SkillName + ":";
 			// 
 			// SkillBox
 			// 
@@ -219,7 +219,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Creature Lore";
+			this.Text = Session.I18N.CreatureLore;
 			this.Pages.ResumeLayout(false);
 			this.InfoPage.ResumeLayout(false);
 			this.InfoPage.PerformLayout();

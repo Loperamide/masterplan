@@ -215,7 +215,7 @@ namespace Masterplan.Controls
 
 		static string get_version_string()
 		{
-			string str = "Adventure Design Studio";
+			string str = Session.I18N.AdventureDesignStudio;
 
 			Assembly ass = Assembly.GetEntryAssembly();
 			if (ass != null)

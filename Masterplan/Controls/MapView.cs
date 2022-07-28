@@ -1179,7 +1179,7 @@ namespace Masterplan.Controls
 				if (fMode == MapViewMode.Normal)
 					b = Brushes.White;
 
-				e.Graphics.DrawString("(no map selected)", Font, b, ClientRectangle, fCentred);
+				e.Graphics.DrawString("(" + Session.I18N.NoMapSelected + ")", Font, b, ClientRectangle, fCentred);
 				return;
 			}
 
@@ -2057,17 +2057,17 @@ namespace Masterplan.Controls
 			if (caption == "")
 			{
 				if ((fMode == MapViewMode.Normal) && (fMap.Areas.Count == 0))
-					caption = "To create map areas (rooms etc), right-click on the map and drag.";
+					caption = Session.I18N.LabelMapViewCap1;
 				if (fMap.Name == "")
-					caption = "You need to give this map a name.";
+					caption = Session.I18N.LabelMapViewCap2;
 				if ((fMode == MapViewMode.Normal) && (fMap.Tiles.Count == 0))
-					caption = "To begin, drag tiles from the list on the right onto the blueprint.";
+					caption = Session.I18N.LabelMapViewCap3;
 				if (fAllowScrolling)
-					caption = "Map is in scroll / zoom mode; double-click to return to tactical mode.";
+					caption = Session.I18N.LabelMapViewCap4;
 				if (fDrawing != null)
-					caption = "Map is in drawing mode; double-click to return to tactical mode.";
+					caption = Session.I18N.LabelMapViewCap5;
 				if (fLineOfSight)
-					caption = "Map is in line of sight mode; select tokens to check sightlines, or double-click to return to tactical mode.";
+					caption = Session.I18N.LabelMapViewCap6;
 
 				if (fDraggedToken != null)
 				{
@@ -2076,12 +2076,12 @@ namespace Masterplan.Controls
 						TokenLink link = find_link(fDraggedToken.Token, fDraggedToken.LinkedToken);
 						if (link == null)
 						{
-							caption = "Release here to create a link.";
+							caption = Session.I18N.LabelMapViewCap7;
 						}
 						else
 						{
-							string linktext = (link.Text == "") ? "link" : "'" + link.Text + "' link";
-							caption = "Release here to remove the " + linktext + ".";
+							string linktext = (link.Text == "") ? Session.I18N.Link : "'" + link.Text + "' " + Session.I18N.Link;
+							caption = Session.I18N.LabelMapViewCap8 + " " + linktext + ".";
 						}
 					}
 				}

@@ -42,41 +42,41 @@ namespace Masterplan.Controls
 
 			#region Skill DCs
 
-			ListViewItem lvi_easy = SkillList.Items.Add("Easy");
-			lvi_easy.SubItems.Add("DC " + AI.GetSkillDC(Difficulty.Easy, level));
+			ListViewItem lvi_easy = SkillList.Items.Add(Session.I18N.Easy);
+			lvi_easy.SubItems.Add(Session.I18N.DC + " " + AI.GetSkillDC(Difficulty.Easy, level));
 			lvi_easy.Group = SkillList.Groups[0];
 
-			ListViewItem lvi_moderate = SkillList.Items.Add("Moderate");
-			lvi_moderate.SubItems.Add("DC " + AI.GetSkillDC(Difficulty.Moderate, level));
+			ListViewItem lvi_moderate = SkillList.Items.Add(Session.I18N.Moderate);
+			lvi_moderate.SubItems.Add(Session.I18N.DC + " " + AI.GetSkillDC(Difficulty.Moderate, level));
 			lvi_moderate.Group = SkillList.Groups[0];
 
-			ListViewItem lvi_hard = SkillList.Items.Add("Hard");
-			lvi_hard.SubItems.Add("DC " + AI.GetSkillDC(Difficulty.Hard, level));
+			ListViewItem lvi_hard = SkillList.Items.Add(Session.I18N.Hard);
+			lvi_hard.SubItems.Add(Session.I18N.DC + " " + AI.GetSkillDC(Difficulty.Hard, level));
 			lvi_hard.Group = SkillList.Groups[0];
 
 			#endregion
 
 			#region Aid Another
 
-			ListViewItem lvi_aid = SkillList.Items.Add("Aid Another");
-			lvi_aid.SubItems.Add("DC " + aid_another);
+			ListViewItem lvi_aid = SkillList.Items.Add(Session.I18N.AidAnother);
+			lvi_aid.SubItems.Add(Session.I18N.DC + " " + aid_another);
 			lvi_aid.Group = SkillList.Groups[1];
 
 			#endregion
 
 			#region Damage
 
-			ListViewItem lvi_damage = SkillList.Items.Add("Against a single target");
+			ListViewItem lvi_damage = SkillList.Items.Add(Session.I18N.LabelAgainstSingleTarget);
 			lvi_damage.SubItems.Add(normal);
 			lvi_damage.Tag = DiceExpression.Parse(normal);
 			lvi_damage.Group = SkillList.Groups[2];
 
-			ListViewItem lvi_multiple = SkillList.Items.Add("Against multiple targets");
+			ListViewItem lvi_multiple = SkillList.Items.Add(Session.I18N.LabelAgainstMultipleTargets);
 			lvi_multiple.SubItems.Add(multiple);
 			lvi_multiple.Tag = DiceExpression.Parse(multiple);
 			lvi_multiple.Group = SkillList.Groups[2];
 
-			ListViewItem lvi_minion = SkillList.Items.Add("From a minion");
+			ListViewItem lvi_minion = SkillList.Items.Add(Session.I18N.LabelFromMinion);
 			lvi_minion.SubItems.Add(minion);
 			lvi_minion.Tag = DiceExpression.Parse(minion);
 			lvi_minion.Group = SkillList.Groups[2];
@@ -85,32 +85,32 @@ namespace Masterplan.Controls
 
 			#region Monster Knowledge
 
-			ListViewItem lvi_aberrant = SkillList.Items.Add("Aberrant");
-			lvi_aberrant.SubItems.Add("Dungeoneering");
+			ListViewItem lvi_aberrant = SkillList.Items.Add(Session.I18N.Aberrant);
+			lvi_aberrant.SubItems.Add(Session.I18N.Dungeoneering);
 			lvi_aberrant.Group = SkillList.Groups[3];
 
-			ListViewItem lvi_elemental = SkillList.Items.Add("Elemental");
-			lvi_elemental.SubItems.Add("Arcana");
+			ListViewItem lvi_elemental = SkillList.Items.Add(Session.I18N.Elemental);
+			lvi_elemental.SubItems.Add(Session.I18N.Arcana);
 			lvi_elemental.Group = SkillList.Groups[3];
 
-			ListViewItem lvi_fey = SkillList.Items.Add("Fey");
-			lvi_fey.SubItems.Add("Arcana");
+			ListViewItem lvi_fey = SkillList.Items.Add(Session.I18N.Fey);
+			lvi_fey.SubItems.Add(Session.I18N.Arcana);
 			lvi_fey.Group = SkillList.Groups[3];
 
-			ListViewItem lvi_immortal = SkillList.Items.Add("Immortal");
-			lvi_immortal.SubItems.Add("Religion");
+			ListViewItem lvi_immortal = SkillList.Items.Add(Session.I18N.Immortal);
+			lvi_immortal.SubItems.Add(Session.I18N.Religion);
 			lvi_immortal.Group = SkillList.Groups[3];
 
-			ListViewItem lvi_natural = SkillList.Items.Add("Natural");
-			lvi_natural.SubItems.Add("Nature");
+			ListViewItem lvi_natural = SkillList.Items.Add(Session.I18N.Natural);
+			lvi_natural.SubItems.Add(Session.I18N.Nature);
 			lvi_natural.Group = SkillList.Groups[3];
 
-			ListViewItem lvi_shadow = SkillList.Items.Add("Shadow");
-			lvi_shadow.SubItems.Add("Arcana");
+			ListViewItem lvi_shadow = SkillList.Items.Add(Session.I18N.Shadow);
+			lvi_shadow.SubItems.Add(Session.I18N.Arcana);
 			lvi_shadow.Group = SkillList.Groups[3];
 
-			ListViewItem lvi_undead = SkillList.Items.Add("Undead keyword");
-			lvi_undead.SubItems.Add("Religion");
+			ListViewItem lvi_undead = SkillList.Items.Add(Session.I18N.UndeadKeyword);
+			lvi_undead.SubItems.Add(Session.I18N.Religion);
 			lvi_undead.Group = SkillList.Groups[3];
 
 			#endregion

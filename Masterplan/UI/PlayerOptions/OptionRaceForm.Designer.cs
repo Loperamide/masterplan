@@ -85,7 +85,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -134,7 +134,7 @@
 			this.TraitsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.TraitsPage.Size = new System.Drawing.Size(341, 222);
 			this.TraitsPage.TabIndex = 1;
-			this.TraitsPage.Text = "Racial Traits";
+			this.TraitsPage.Text = Session.I18N.RacialTraits;
 			this.TraitsPage.UseVisualStyleBackColor = true;
 			// 
 			// SkillBonusBox
@@ -218,7 +218,7 @@
 			this.SkillBonusLbl.Name = "SkillBonusLbl";
 			this.SkillBonusLbl.Size = new System.Drawing.Size(73, 13);
 			this.SkillBonusLbl.TabIndex = 14;
-			this.SkillBonusLbl.Text = "Skill Bonuses:";
+			this.SkillBonusLbl.Text = Session.I18N.SkillBonuses + ":";
 			// 
 			// LanguageLbl
 			// 
@@ -227,7 +227,7 @@
 			this.LanguageLbl.Name = "LanguageLbl";
 			this.LanguageLbl.Size = new System.Drawing.Size(63, 13);
 			this.LanguageLbl.TabIndex = 12;
-			this.LanguageLbl.Text = "Languages:";
+			this.LanguageLbl.Text = Session.I18N.Languages + ":";
 			// 
 			// VisionLbl
 			// 
@@ -236,7 +236,7 @@
 			this.VisionLbl.Name = "VisionLbl";
 			this.VisionLbl.Size = new System.Drawing.Size(38, 13);
 			this.VisionLbl.TabIndex = 10;
-			this.VisionLbl.Text = "Vision:";
+			this.VisionLbl.Text = Session.I18N.Vision + ":";
 			// 
 			// SpeedLbl
 			// 
@@ -245,7 +245,7 @@
 			this.SpeedLbl.Name = "SpeedLbl";
 			this.SpeedLbl.Size = new System.Drawing.Size(41, 13);
 			this.SpeedLbl.TabIndex = 8;
-			this.SpeedLbl.Text = "Speed:";
+			this.SpeedLbl.Text = Session.I18N.Speed + ":";
 			// 
 			// SizeLbl
 			// 
@@ -254,7 +254,7 @@
 			this.SizeLbl.Name = "SizeLbl";
 			this.SizeLbl.Size = new System.Drawing.Size(30, 13);
 			this.SizeLbl.TabIndex = 6;
-			this.SizeLbl.Text = "Size:";
+			this.SizeLbl.Text = Session.I18N.Size + ":";
 			// 
 			// AbilityScoreLbl
 			// 
@@ -263,7 +263,7 @@
 			this.AbilityScoreLbl.Name = "AbilityScoreLbl";
 			this.AbilityScoreLbl.Size = new System.Drawing.Size(73, 13);
 			this.AbilityScoreLbl.TabIndex = 4;
-			this.AbilityScoreLbl.Text = "Ability Scores:";
+			this.AbilityScoreLbl.Text = Session.I18N.AbilityScores + ":";
 			// 
 			// WeightLbl
 			// 
@@ -272,7 +272,7 @@
 			this.WeightLbl.Name = "WeightLbl";
 			this.WeightLbl.Size = new System.Drawing.Size(87, 13);
 			this.WeightLbl.TabIndex = 2;
-			this.WeightLbl.Text = "Average Weight:";
+			this.WeightLbl.Text = Session.I18N.AverageWeight + ":";
 			// 
 			// HeightLbl
 			// 
@@ -281,7 +281,7 @@
 			this.HeightLbl.Name = "HeightLbl";
 			this.HeightLbl.Size = new System.Drawing.Size(84, 13);
 			this.HeightLbl.TabIndex = 0;
-			this.HeightLbl.Text = "Average Height:";
+			this.HeightLbl.Text = Session.I18N.AverageHeight + ":";
 			// 
 			// DetailsPage
 			// 
@@ -293,7 +293,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(341, 222);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -319,7 +319,7 @@
 			this.FeaturesPage.Padding = new System.Windows.Forms.Padding(3);
 			this.FeaturesPage.Size = new System.Drawing.Size(341, 222);
 			this.FeaturesPage.TabIndex = 2;
-			this.FeaturesPage.Text = "Features";
+			this.FeaturesPage.Text = Session.I18N.Features;
 			this.FeaturesPage.UseVisualStyleBackColor = true;
 			// 
 			// FeatureList
@@ -341,7 +341,7 @@
 			// 
 			// FeatureHdr
 			// 
-			this.FeatureHdr.Text = "Feature";
+			this.FeatureHdr.Text = Session.I18N.Feature;
 			this.FeatureHdr.Width = 300;
 			// 
 			// FeatureToolbar
@@ -354,7 +354,7 @@
 			this.FeatureToolbar.Name = "FeatureToolbar";
 			this.FeatureToolbar.Size = new System.Drawing.Size(335, 25);
 			this.FeatureToolbar.TabIndex = 0;
-			this.FeatureToolbar.Text = "toolStrip1";
+			this.FeatureToolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// FeatureAddBtn
 			// 
@@ -363,7 +363,7 @@
 			this.FeatureAddBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.FeatureAddBtn.Name = "FeatureAddBtn";
 			this.FeatureAddBtn.Size = new System.Drawing.Size(33, 22);
-			this.FeatureAddBtn.Text = "Add";
+			this.FeatureAddBtn.Text = Session.I18N.Add;
 			this.FeatureAddBtn.Click += new System.EventHandler(this.FeatureAddBtn_Click);
 			// 
 			// FeatureRemoveBtn
@@ -373,7 +373,7 @@
 			this.FeatureRemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.FeatureRemoveBtn.Name = "FeatureRemoveBtn";
 			this.FeatureRemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.FeatureRemoveBtn.Text = "Remove";
+			this.FeatureRemoveBtn.Text = Session.I18N.Remove;
 			this.FeatureRemoveBtn.Click += new System.EventHandler(this.FeatureRemoveBtn_Click);
 			// 
 			// FeatureEditBtn
@@ -383,7 +383,7 @@
 			this.FeatureEditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.FeatureEditBtn.Name = "FeatureEditBtn";
 			this.FeatureEditBtn.Size = new System.Drawing.Size(31, 22);
-			this.FeatureEditBtn.Text = "Edit";
+			this.FeatureEditBtn.Text = Session.I18N.Edit;
 			this.FeatureEditBtn.Click += new System.EventHandler(this.FeatureEditBtn_Click);
 			// 
 			// PowersPage
@@ -395,7 +395,7 @@
 			this.PowersPage.Padding = new System.Windows.Forms.Padding(3);
 			this.PowersPage.Size = new System.Drawing.Size(341, 222);
 			this.PowersPage.TabIndex = 3;
-			this.PowersPage.Text = "Powers";
+			this.PowersPage.Text = Session.I18N.Powers;
 			this.PowersPage.UseVisualStyleBackColor = true;
 			// 
 			// PowerList
@@ -417,7 +417,7 @@
 			// 
 			// PowerHdr
 			// 
-			this.PowerHdr.Text = "Feature";
+			this.PowerHdr.Text = Session.I18N.Feature;
 			this.PowerHdr.Width = 300;
 			// 
 			// PowerToolbar
@@ -439,7 +439,7 @@
 			this.PowerAddBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.PowerAddBtn.Name = "PowerAddBtn";
 			this.PowerAddBtn.Size = new System.Drawing.Size(33, 22);
-			this.PowerAddBtn.Text = "Add";
+			this.PowerAddBtn.Text = Session.I18N.Add;
 			this.PowerAddBtn.Click += new System.EventHandler(this.PowerAddBtn_Click);
 			// 
 			// PowerRemoveBtn
@@ -449,7 +449,7 @@
 			this.PowerRemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.PowerRemoveBtn.Name = "PowerRemoveBtn";
 			this.PowerRemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.PowerRemoveBtn.Text = "Remove";
+			this.PowerRemoveBtn.Text = Session.I18N.Remove;
 			this.PowerRemoveBtn.Click += new System.EventHandler(this.PowerRemoveBtn_Click);
 			// 
 			// PowerEditBtn
@@ -459,7 +459,7 @@
 			this.PowerEditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.PowerEditBtn.Name = "PowerEditBtn";
 			this.PowerEditBtn.Size = new System.Drawing.Size(31, 22);
-			this.PowerEditBtn.Text = "Edit";
+			this.PowerEditBtn.Text = Session.I18N.Edit;
 			this.PowerEditBtn.Click += new System.EventHandler(this.PowerEditBtn_Click);
 			// 
 			// OKBtn
@@ -470,7 +470,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 3;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -482,7 +482,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 4;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// QuoteLbl
@@ -493,7 +493,7 @@
 			this.QuoteLbl.Name = "QuoteLbl";
 			this.QuoteLbl.Size = new System.Drawing.Size(39, 13);
 			this.QuoteLbl.TabIndex = 1;
-			this.QuoteLbl.Text = "Quote:";
+			this.QuoteLbl.Text = Session.I18N.Quote + ":";
 			// 
 			// QuoteBox
 			// 
@@ -523,7 +523,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Race";
+			this.Text = Session.I18N.Race;
 			this.Pages.ResumeLayout(false);
 			this.TraitsPage.ResumeLayout(false);
 			this.TraitsPage.PerformLayout();

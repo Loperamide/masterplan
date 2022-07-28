@@ -489,7 +489,7 @@ namespace Masterplan.Controls
 
 				if (Session.Project == null)
 				{
-					string str = "(no project)";
+					string str = "(" + Session.I18N.NoProject + ")";
 					e.Graphics.DrawString(str, Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
 
 					return;
@@ -497,7 +497,7 @@ namespace Masterplan.Controls
 
 				if ((fPlot == null) || (fPlot.Points.Count == 0))
 				{
-					string str = "(no plot points)";
+					string str = "(" + Session.I18N.NoPlotPoints + ")";
 					e.Graphics.DrawString(str, Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
 
 					return;
@@ -561,7 +561,7 @@ namespace Masterplan.Controls
 							e.Graphics.DrawLine(SystemPens.ControlDarkDark, start, end);
 
 							PointF text = new PointF(0F, y - Font.Height);
-							e.Graphics.DrawString("Level " + end_level, Font, SystemBrushes.WindowText, text);
+							e.Graphics.DrawString(Session.I18N.Level + " " + end_level, Font, SystemBrushes.WindowText, text);
 						}
 					}
 				}
@@ -1480,7 +1480,7 @@ namespace Masterplan.Controls
 						{
 							Encounter enc = fHoverPoint.Element as Encounter;
 
-							string str = "Encounter: " + enc.GetXP() + " XP";
+							string str = Session.I18N.Encounter + ": " + enc.GetXP() + " " + Session.I18N.XP;
 
 							foreach (EncounterSlot slot in enc.Slots)
 							{
@@ -1511,7 +1511,7 @@ namespace Masterplan.Controls
 						{
 							TrapElement te = fHoverPoint.Element as TrapElement;
 
-							string str = te.Trap.Name + ": " + te.GetXP() + " XP";
+							string str = te.Trap.Name + ": " + te.GetXP() + " " + Session.I18N.XP;
 							str += Environment.NewLine + te.Trap.Info + " " + te.Trap.Type.ToString().ToLower();
 
 							contents.Add(str);
@@ -1521,7 +1521,7 @@ namespace Masterplan.Controls
 						{
 							SkillChallenge sc = fHoverPoint.Element as SkillChallenge;
 
-							string str = sc.Name + ": " + sc.GetXP() + " XP";
+							string str = sc.Name + ": " + sc.GetXP() + " " + Session.I18N.XP;
 							str += Environment.NewLine + sc.Info;
 
 							contents.Add(str);
@@ -1535,10 +1535,10 @@ namespace Masterplan.Controls
 							switch (q.Type)
 							{
 								case QuestType.Major:
-									str = "Major quest: " + q.GetXP() + " XP";
+									str = Session.I18N.MajorQuest + ": " + q.GetXP() + " " + Session.I18N.XP;
 									break;
 								case QuestType.Minor:
-									str = "Minor quest: " + q.GetXP() + " XP";
+									str = Session.I18N.MinorQuest + ": " + q.GetXP() + " " + Session.I18N.XP;
 									break;
 							}
 
@@ -1555,7 +1555,7 @@ namespace Masterplan.Controls
 						parcels += p.Name;
 					}
 					if (parcels != "")
-						contents.Add("Treasure parcels: " + parcels);
+						contents.Add(Session.I18N.TreasureParcels + ": " + parcels);
 
 					string s = "";
 					foreach (string str in contents)

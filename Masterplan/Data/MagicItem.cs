@@ -63,7 +63,7 @@ namespace Masterplan.Data
 			get { return fType; }
 			set { fType = value; }
 		}
-		string fType = "Weapon";
+		string fType = Session.I18N.Weapon;
 
 		/// <summary>
 		/// Gets or sets the item type.
@@ -112,7 +112,7 @@ namespace Masterplan.Data
 		{
 			get
 			{
-				return "Level " + fLevel + " " + fType.ToLower();
+				return Session.I18N.Level + " " + fLevel + " " + fType.ToLower();
 			}
 		}
 

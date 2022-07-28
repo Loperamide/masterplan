@@ -65,7 +65,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -97,7 +97,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(338, 213);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -121,7 +121,7 @@
 			this.LevelsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.LevelsPage.Size = new System.Drawing.Size(338, 165);
 			this.LevelsPage.TabIndex = 1;
-			this.LevelsPage.Text = "Disease Levels";
+			this.LevelsPage.Text = Session.I18N.DiseaseLevels;
 			this.LevelsPage.UseVisualStyleBackColor = true;
 			// 
 			// LevelList
@@ -143,7 +143,7 @@
 			// 
 			// LevelHdr
 			// 
-			this.LevelHdr.Text = "Disease Level";
+			this.LevelHdr.Text = Session.I18N.DiseaseLevels;
 			this.LevelHdr.Width = 272;
 			// 
 			// Toolbar
@@ -159,7 +159,7 @@
 			this.Toolbar.Name = "Toolbar";
 			this.Toolbar.Size = new System.Drawing.Size(332, 25);
 			this.Toolbar.TabIndex = 0;
-			this.Toolbar.Text = "toolStrip1";
+			this.Toolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// AddBtn
 			// 
@@ -168,7 +168,7 @@
 			this.AddBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.AddBtn.Name = "AddBtn";
 			this.AddBtn.Size = new System.Drawing.Size(33, 22);
-			this.AddBtn.Text = "Add";
+			this.AddBtn.Text = Session.I18N.Add;
 			this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
 			// 
 			// RemoveBtn
@@ -178,7 +178,7 @@
 			this.RemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.RemoveBtn.Name = "RemoveBtn";
 			this.RemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.RemoveBtn.Text = "Remove";
+			this.RemoveBtn.Text = Session.I18N.Remove;
 			this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
 			// 
 			// EditBtn
@@ -188,7 +188,7 @@
 			this.EditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EditBtn.Name = "EditBtn";
 			this.EditBtn.Size = new System.Drawing.Size(31, 22);
-			this.EditBtn.Text = "Edit";
+			this.EditBtn.Text = Session.I18N.Edit;
 			this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
 			// 
 			// toolStripSeparator1
@@ -203,7 +203,7 @@
 			this.UpBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.UpBtn.Name = "UpBtn";
 			this.UpBtn.Size = new System.Drawing.Size(59, 22);
-			this.UpBtn.Text = "Move Up";
+			this.UpBtn.Text = Session.I18N.MoveUp;
 			this.UpBtn.Click += new System.EventHandler(this.UpBtn_Click);
 			// 
 			// DownBtn
@@ -213,7 +213,7 @@
 			this.DownBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.DownBtn.Name = "DownBtn";
 			this.DownBtn.Size = new System.Drawing.Size(75, 22);
-			this.DownBtn.Text = "Move Down";
+			this.DownBtn.Text = Session.I18N.MoveDown;
 			this.DownBtn.Click += new System.EventHandler(this.DownBtn_Click);
 			// 
 			// OKBtn
@@ -224,7 +224,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 11;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -236,7 +236,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 12;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// LevelBox
@@ -255,7 +255,7 @@
 			this.LevelLbl.Name = "LevelLbl";
 			this.LevelLbl.Size = new System.Drawing.Size(36, 13);
 			this.LevelLbl.TabIndex = 2;
-			this.LevelLbl.Text = "Level:";
+			this.LevelLbl.Text = Session.I18N.Level + ":";
 			// 
 			// MaintainBox
 			// 
@@ -273,7 +273,7 @@
 			this.MaintainLbl.Name = "MaintainLbl";
 			this.MaintainLbl.Size = new System.Drawing.Size(68, 13);
 			this.MaintainLbl.TabIndex = 8;
-			this.MaintainLbl.Text = "Maintain DC:";
+			this.MaintainLbl.Text = Session.I18N.MaintainDC + ":";
 			// 
 			// ImproveBox
 			// 
@@ -291,7 +291,7 @@
 			this.ImproveLbl.Name = "ImproveLbl";
 			this.ImproveLbl.Size = new System.Drawing.Size(66, 13);
 			this.ImproveLbl.TabIndex = 6;
-			this.ImproveLbl.Text = "Improve DC:";
+			this.ImproveLbl.Text = Session.I18N.ImproveDC + ":";
 			// 
 			// OptionDiseaseForm
 			// 
@@ -318,7 +318,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Disease";
+			this.Text = Session.I18N.Disease;
 			this.Pages.ResumeLayout(false);
 			this.DetailsPage.ResumeLayout(false);
 			this.DetailsPage.PerformLayout();

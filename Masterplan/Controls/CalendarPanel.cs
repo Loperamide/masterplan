@@ -102,7 +102,7 @@ namespace Masterplan.Controls
 
 			if (fCalendar == null)
 			{
-				e.Graphics.DrawString("(no calendar)", Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
+				e.Graphics.DrawString("(" + Session.I18N.NoCalendar + ")", Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
 				return;
 			}
 
@@ -184,7 +184,7 @@ namespace Masterplan.Controls
 						if (str != "")
 							str += Environment.NewLine;
 
-						str += "Start of " + ce.Name;
+						str += Session.I18N.StartOf + " " + ce.Name;
 					}
 				}
 

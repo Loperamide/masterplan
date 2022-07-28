@@ -49,7 +49,7 @@ namespace Masterplan.Data
 				string[] lines = fContent.Split(breaks, StringSplitOptions.RemoveEmptyEntries);
 
 				if (lines.Length == 0)
-					return "(blank note)";
+					return "(" + Session.I18N.BlancNote + ")";
 
 				return lines[0];
 			}

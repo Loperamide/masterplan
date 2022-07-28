@@ -217,7 +217,7 @@ namespace Masterplan.Data
 		/// </summary>
 		public string Info
 		{
-			get { return "Level " + fLevel + " " + fRole + " " + fType.ToString().ToLower(); }
+			get { return Session.I18N.Level + " " + fLevel + " " + fRole + " " + fType.ToString().ToLower(); }
 		}
 
 		/// <summary>
@@ -352,7 +352,7 @@ namespace Masterplan.Data
 					{
 						DiceExpression exp_adj = exp.Adjust(delta);
 						if ((exp_adj != null) && (exp.ToString() != exp_adj.ToString()))
-							ta.OnHit = ta.OnHit.Replace(hit_dmg, exp_adj + " damage");
+							ta.OnHit = ta.OnHit.Replace(hit_dmg, exp_adj + " " + Session.I18N.Damage);
 					}
 				}
 
@@ -364,7 +364,7 @@ namespace Masterplan.Data
 					{
 						DiceExpression exp_adj = exp.Adjust(delta);
 						if ((exp_adj != null) && (exp.ToString() != exp_adj.ToString()))
-							ta.OnMiss = ta.OnMiss.Replace(miss_dmg, exp_adj + " damage");
+							ta.OnMiss = ta.OnMiss.Replace(miss_dmg, exp_adj + " " + Session.I18N.Damage);
 					}
 				}
 
@@ -376,7 +376,7 @@ namespace Masterplan.Data
 					{
 						DiceExpression exp_adj = exp.Adjust(delta);
 						if ((exp_adj != null) && (exp.ToString() != exp_adj.ToString()))
-							ta.Effect = ta.Effect.Replace(effect_dmg, exp_adj + " damage");
+							ta.Effect = ta.Effect.Replace(effect_dmg, exp_adj + " " + Session.I18N.Damage);
 					}
 				}
 			}
@@ -410,7 +410,7 @@ namespace Masterplan.Data
 			get { return fSkillName; }
 			set { fSkillName = value; }
 		}
-		string fSkillName = "Perception";
+		string fSkillName = Session.I18N.Perception;
 
 		/// <summary>
 		/// Gets or sets the skill DC.
@@ -446,7 +446,7 @@ namespace Masterplan.Data
 			}
 			else
 			{
-				return fSkillName + " DC " + fDC + ": " + fDetails;
+				return fSkillName + " " + Session.I18N.DC + " " + fDC + ": " + fDetails;
 			}
 		}
 
@@ -477,10 +477,10 @@ namespace Masterplan.Data
 			if (fSkillName != rhs.SkillName)
 			{
 				// Sort by skill name
-				if (fSkillName == "Perception")
+				if (fSkillName == Session.I18N.Perception)
 					return -1;
 
-				if (rhs.SkillName == "Perception")
+				if (rhs.SkillName == Session.I18N.Perception)
 					return 1;
 
 				return fSkillName.CompareTo(rhs.SkillName);

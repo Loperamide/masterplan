@@ -59,7 +59,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 1;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// OKBtn
@@ -70,7 +70,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 0;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			// 
 			// StatBlockBrowser
@@ -95,7 +95,7 @@
 			this.Toolbar.Name = "Toolbar";
 			this.Toolbar.Size = new System.Drawing.Size(384, 25);
 			this.Toolbar.TabIndex = 0;
-			this.Toolbar.Text = "toolStrip1";
+			this.Toolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// FileMenu
 			// 
@@ -107,20 +107,20 @@
 			this.FileMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.FileMenu.Name = "FileMenu";
 			this.FileMenu.Size = new System.Drawing.Size(38, 22);
-			this.FileMenu.Text = "File";
+			this.FileMenu.Text = Session.I18N.File;
 			// 
 			// FileImport
 			// 
 			this.FileImport.Name = "FileImport";
 			this.FileImport.Size = new System.Drawing.Size(119, 22);
-			this.FileImport.Text = "Import...";
+			this.FileImport.Text = Session.I18N.Import + "...";
 			this.FileImport.Click += new System.EventHandler(this.FileImport_Click);
 			// 
 			// FileExport
 			// 
 			this.FileExport.Name = "FileExport";
 			this.FileExport.Size = new System.Drawing.Size(119, 22);
-			this.FileExport.Text = "Export...";
+			this.FileExport.Text = Session.I18N.Export + "...";
 			this.FileExport.Click += new System.EventHandler(this.FileExport_Click);
 			// 
 			// ArtifactBuilderForm
@@ -139,7 +139,7 @@
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Artifact Builder";
+			this.Text = Session.I18N.ArtifactBuilder;
 			this.BtnPnl.ResumeLayout(false);
 			this.Toolbar.ResumeLayout(false);
 			this.Toolbar.PerformLayout();

@@ -216,7 +216,7 @@ namespace Masterplan.Controls
 
 				if ((fMap == null) || (fMap.Image == null))
 				{
-					e.Graphics.DrawString("(no map selected)", Font, Brushes.Black, ClientRectangle, fCentred);
+					e.Graphics.DrawString("(" + Session.I18N.NoMapSelected + ")", Font, Brushes.Black, ClientRectangle, fCentred);
 					return;
 				}
 
@@ -371,7 +371,7 @@ namespace Masterplan.Controls
 
 				if ((fMode == MapViewMode.Normal) && (fMap.Locations.Count == 0))
 				{
-					string caption = "Double-click on the map to set a location.";
+					string caption = Session.I18N.LabelDoubleClickSetLocation;
 
 					float delta = 10;
 					float width = ClientRectangle.Width - (2 * delta);

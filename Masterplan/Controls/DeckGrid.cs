@@ -95,7 +95,7 @@ namespace Masterplan.Controls
 
 			if (fDeck == null)
 			{
-				e.Graphics.DrawString("(no deck)", Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
+				e.Graphics.DrawString("(" + Session.I18N.NoDeck + ")", Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
 				return;
 			}
 
@@ -182,14 +182,14 @@ namespace Masterplan.Controls
 
 			for (int row = 0; row != fRows.Count + 1; ++row)
 			{
-				string str = "Total";
+				string str = Session.I18N.Total;
 				if (row != fRows.Count)
 				{
 					CardCategory cat = fRows[row];
 					str = cat.ToString();
 
 					if (cat == CardCategory.SoldierBrute)
-						str = "Sldr / Brute";
+						str = Session.I18N.SoldierBrute;
 				}
 
 				// Draw row header cell
@@ -199,26 +199,26 @@ namespace Masterplan.Controls
 
 			for (int col = 0; col != fColumns.Count + 1; ++col)
 			{
-				string str = "Total";
+				string str = Session.I18N.Total;
 				if (col != fColumns.Count)
 				{
 					switch (fColumns[col])
 					{
 						case Difficulty.Trivial:
-							str = "Lower";
+							str = Session.I18N.Lower;
 							break;
 						case Difficulty.Easy:
 							int min = Math.Max(1, fDeck.Level - 1);
-							str = "Lvl " + min + " to " + (fDeck.Level + 1);
+							str = Session.I18N.Lvl + " " + min + " " + Session.I18N.To + " " + (fDeck.Level + 1);
 							break;
 						case Difficulty.Moderate:
-							str = "Lvl " + (fDeck.Level + 2) + " to " + (fDeck.Level + 3);
+							str = Session.I18N.Lvl + " " + (fDeck.Level + 2) + " " + Session.I18N.To + " " + (fDeck.Level + 3);
 							break;
 						case Difficulty.Hard:
-							str = "Lvl " + (fDeck.Level + 4) + " to " + (fDeck.Level + 5);
+							str = Session.I18N.Lvl + " " + (fDeck.Level + 4) + " " + Session.I18N.To + " " + (fDeck.Level + 5);
 							break;
 						case Difficulty.Extreme:
-							str = "Higher";
+							str = Session.I18N.Higher;
 							break;
 					}
 				}
@@ -301,7 +301,7 @@ namespace Masterplan.Controls
 
 			// Total
 			RectangleF total_rect = get_rect(fColumns.Count + 1, fRows.Count + 1);
-			e.Graphics.DrawString(fDeck.Cards.Count + " cards", header, SystemBrushes.WindowText, total_rect, fCentred);
+			e.Graphics.DrawString(fDeck.Cards.Count + " " + Session.I18N.Cards, header, SystemBrushes.WindowText, total_rect, fCentred);
 
 			#endregion
 		}

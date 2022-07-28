@@ -28,9 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("PCs", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Creatures", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Traps", System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup(Session.I18N.PCs, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup(Session.I18N.Creatures, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup(Session.I18N.Traps, System.Windows.Forms.HorizontalAlignment.Left);
 			this.OKBtn = new System.Windows.Forms.Button();
 			this.CombatantList = new System.Windows.Forms.ListView();
 			this.NameHdr = new System.Windows.Forms.ColumnHeader();
@@ -45,7 +45,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 3;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			// 
 			// CombatantList
@@ -56,11 +56,11 @@
 			this.CombatantList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.NameHdr});
 			this.CombatantList.FullRowSelect = true;
-			listViewGroup1.Header = "PCs";
+			listViewGroup1.Header = Session.I18N.PCs;
 			listViewGroup1.Name = "listViewGroup1";
-			listViewGroup2.Header = "Creatures";
+			listViewGroup2.Header = Session.I18N.Creatures;
 			listViewGroup2.Name = "listViewGroup2";
-			listViewGroup3.Header = "Traps";
+			listViewGroup3.Header = Session.I18N.Traps;
 			listViewGroup3.Name = "listViewGroup3";
 			this.CombatantList.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1,
@@ -79,7 +79,7 @@
 			// 
 			// NameHdr
 			// 
-			this.NameHdr.Text = "Name";
+			this.NameHdr.Text = Session.I18N.Name;
 			this.NameHdr.Width = 270;
 			// 
 			// CancelBtn
@@ -90,7 +90,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 4;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// CombatantSelectForm
@@ -110,7 +110,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Select Combatant";
+			this.Text = Session.I18N.SelectCombatant;
 			this.ResumeLayout(false);
 
 		}

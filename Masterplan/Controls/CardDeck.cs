@@ -100,7 +100,7 @@ namespace Masterplan.Controls
 
 			if ((fCards == null) || (fCards.Count == 0))
 			{
-				e.Graphics.DrawString("(no cards)", Font, Brushes.Black, ClientRectangle, fCentred);
+				e.Graphics.DrawString("(" + Session.I18N.NoCards + ")", Font, Brushes.Black, ClientRectangle, fCentred);
 				return;
 			}
 
@@ -198,14 +198,14 @@ namespace Masterplan.Controls
 						g.FillRectangle(b, content);
 					}
 
-					string msg = "Click on a card to move it to the front of the deck.";
+					string msg = Session.I18N.LabelClickOnCardMoveFront;
 					g.DrawString(msg, Font, Brushes.Black, content, fCentred);
 				}
 			}
 			else
 			{
 				int remaining = fCards.Count - fVisibleCards;
-				g.DrawString("(" + remaining + " more cards)", Font, Brushes.White, text_rect, fCentred);
+				g.DrawString("(" + remaining + " " + Session.I18N.MoreCards + ")", Font, Brushes.White, text_rect, fCentred);
 			}
 		}
 

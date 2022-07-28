@@ -868,7 +868,7 @@ namespace Masterplan.Data
 								ta.ID = Guid.NewGuid();
 
 							if (ta.Name == null)
-								ta.Name = "Attack";
+								ta.Name = Session.I18N.Attack;
 
 							if (ta.Keywords == null)
 								ta.Keywords = "";
@@ -944,7 +944,7 @@ namespace Masterplan.Data
 						sc.ID = Guid.NewGuid();
 
 					if (sc.Name == null)
-						sc.Name = "Skill Challenge";
+						sc.Name = Session.I18N.SkillChallenge;
 
 					if (sc.Level <= 0)
 						sc.Level = fParty.Level;
@@ -984,7 +984,7 @@ namespace Masterplan.Data
 							ta.ID = Guid.NewGuid();
 
 						if (ta.Name == null)
-							ta.Name = "Attack";
+							ta.Name = Session.I18N.Attack;
 
 						if (ta.Keywords == null)
 							ta.Keywords = "";
@@ -1522,14 +1522,14 @@ namespace Masterplan.Data
         /// </summary>
         public void SetStandardBackgroundItems()
         {
-            fBackgrounds.Add(new Background("Introduction"));
-            fBackgrounds.Add(new Background("Adventure Synopsis"));
-            fBackgrounds.Add(new Background("Adventure Background"));
-            fBackgrounds.Add(new Background("DM Information"));
-            fBackgrounds.Add(new Background("Player Introduction"));
-            fBackgrounds.Add(new Background("Character Hooks"));
-			fBackgrounds.Add(new Background("Treasure Preparation"));
-			fBackgrounds.Add(new Background("Continuing the Story"));
+            fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG1));
+            fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG2));
+            fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG3));
+            fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG4));
+            fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG5));
+            fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG6));
+			fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG7));
+			fBackgrounds.Add(new Background(Session.I18N.ProjectDefaultBG8));
 		}
     }
 }

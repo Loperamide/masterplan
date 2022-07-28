@@ -66,7 +66,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -84,7 +84,7 @@
 			this.CatLbl.Name = "CatLbl";
 			this.CatLbl.Size = new System.Drawing.Size(52, 13);
 			this.CatLbl.TabIndex = 2;
-			this.CatLbl.Text = "Category:";
+			this.CatLbl.Text = Session.I18N.Category + ":";
 			// 
 			// CatBox
 			// 
@@ -104,7 +104,7 @@
 			this.TypeLbl.Name = "TypeLbl";
 			this.TypeLbl.Size = new System.Drawing.Size(34, 13);
 			this.TypeLbl.TabIndex = 4;
-			this.TypeLbl.Text = "Type:";
+			this.TypeLbl.Text = Session.I18N.Type + ":";
 			// 
 			// TypeBox
 			// 
@@ -124,7 +124,7 @@
 			this.TwoHandBox.Name = "TwoHandBox";
 			this.TwoHandBox.Size = new System.Drawing.Size(162, 17);
 			this.TwoHandBox.TabIndex = 6;
-			this.TwoHandBox.Text = "Must be wielded two-handed";
+			this.TwoHandBox.Text = Session.I18N.MustBeTwoHanded;
 			this.TwoHandBox.UseVisualStyleBackColor = true;
 			// 
 			// ProfLbl
@@ -134,7 +134,7 @@
 			this.ProfLbl.Name = "ProfLbl";
 			this.ProfLbl.Size = new System.Drawing.Size(62, 13);
 			this.ProfLbl.TabIndex = 7;
-			this.ProfLbl.Text = "Proficiency:";
+			this.ProfLbl.Text = Session.I18N.Proficiency + ":";
 			// 
 			// ProfBox
 			// 
@@ -152,7 +152,7 @@
 			this.DamageLbl.Name = "DamageLbl";
 			this.DamageLbl.Size = new System.Drawing.Size(50, 13);
 			this.DamageLbl.TabIndex = 9;
-			this.DamageLbl.Text = "Damage:";
+			this.DamageLbl.Text = Session.I18N.Damage + ":";
 			// 
 			// DamageBox
 			// 
@@ -170,7 +170,7 @@
 			this.RangeLbl.Name = "RangeLbl";
 			this.RangeLbl.Size = new System.Drawing.Size(42, 13);
 			this.RangeLbl.TabIndex = 11;
-			this.RangeLbl.Text = "Range:";
+			this.RangeLbl.Text = Session.I18N.Range + ":";
 			// 
 			// RangeBox
 			// 
@@ -188,7 +188,7 @@
 			this.PriceLbl.Name = "PriceLbl";
 			this.PriceLbl.Size = new System.Drawing.Size(34, 13);
 			this.PriceLbl.TabIndex = 13;
-			this.PriceLbl.Text = "Price:";
+			this.PriceLbl.Text = Session.I18N.Price + ":";
 			// 
 			// PriceBox
 			// 
@@ -206,7 +206,7 @@
 			this.WeightLbl.Name = "WeightLbl";
 			this.WeightLbl.Size = new System.Drawing.Size(44, 13);
 			this.WeightLbl.TabIndex = 15;
-			this.WeightLbl.Text = "Weight:";
+			this.WeightLbl.Text = Session.I18N.Weight + ":";
 			// 
 			// WeightBox
 			// 
@@ -237,7 +237,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(290, 103);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -260,7 +260,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 22;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -272,7 +272,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 23;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// PropertiesBox
@@ -294,7 +294,7 @@
 			this.PropertiesLbl.Name = "PropertiesLbl";
 			this.PropertiesLbl.Size = new System.Drawing.Size(57, 13);
 			this.PropertiesLbl.TabIndex = 19;
-			this.PropertiesLbl.Text = "Properties:";
+			this.PropertiesLbl.Text = Session.I18N.Properties + ":";
 			// 
 			// GroupBox
 			// 
@@ -315,7 +315,7 @@
 			this.GroupLbl.Name = "GroupLbl";
 			this.GroupLbl.Size = new System.Drawing.Size(50, 13);
 			this.GroupLbl.TabIndex = 17;
-			this.GroupLbl.Text = "Group(s):";
+			this.GroupLbl.Text = Session.I18N.Group + "(s):";
 			// 
 			// OptionWeaponForm
 			// 
@@ -355,7 +355,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Weapon";
+			this.Text = Session.I18N.Weapon;
 			((System.ComponentModel.ISupportInitialize)(this.ProfBox)).EndInit();
 			this.Pages.ResumeLayout(false);
 			this.DetailsPage.ResumeLayout(false);

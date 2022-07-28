@@ -271,6 +271,7 @@
     <Compile Include="Extensibility\IApplication.cs" />
     <Compile Include="Extensibility\ICommand.cs" />
     <Compile Include="Extensibility\IPage.cs" />
+    <Compile Include="I18N.cs" />
     <Compile Include="Preferences.cs" />
     <Compile Include="Properties\Resources1.Designer.cs">
       <AutoGen>True</AutoGen>

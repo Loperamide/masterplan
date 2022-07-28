@@ -213,7 +213,7 @@ namespace Masterplan.Data
 			get
 			{
 				ICreature creature = (fCreature != null) ? fCreature : Session.FindCreature(fCreatureID, SearchType.Global);
-				string name = (creature != null) ? creature.Name : "(unknown creature)";
+				string name = (creature != null) ? creature.Name : "(" + Session.I18N.UnknownCreature + ")";
 
 				foreach (Guid template_id in fTemplateIDs)
 				{
@@ -247,7 +247,7 @@ namespace Masterplan.Data
 
 					if (creature.Role is Minion)
 					{
-						return "Level " + level + " " + creature.Role;
+						return Session.I18N.Level + " " + level + " " + creature.Role;
 					}
 					else
 					{
@@ -255,10 +255,10 @@ namespace Masterplan.Data
 						switch (Flag)
 						{
 							case RoleFlag.Elite:
-								prefix = "Elite ";
+								prefix = Session.I18N.Elite + " ";
 								break;
 							case RoleFlag.Solo:
-								prefix = "Solo ";
+								prefix = Session.I18N.Solo + " ";
 								break;
 						}
 
@@ -274,7 +274,7 @@ namespace Masterplan.Data
 						if (Leader)
 							str += " (L)";
 
-						return "Level " + level + " " + prefix + str;
+						return Session.I18N.Level + " " + level + " " + prefix + str;
 					}
 				}
 
@@ -878,11 +878,11 @@ namespace Masterplan.Data
 								DiceExpression exp_adj = exp.Adjust(fLevelAdjustment);
 								if ((exp_adj != null) && (exp.ToString() != exp_adj.ToString()))
 								{
-									cp.Details = cp.Details.Replace(dmg_str, exp_adj + " damage (adjusted from " + dmg_str + ")");
+									cp.Details = cp.Details.Replace(dmg_str, exp_adj + " " + Session.I18N.Damage + " (" + Session.I18N.AdjustedFrom + " " + dmg_str + ")");
 								}
 							}
 						}
-						string dmg_str_2 = AI.ExtractDamageR(cp.Details);
+						string dmg_str_2 = AI.ExtractDamage(cp.Details);
 						if (dmg_str_2 !="")
                         {
 							DiceExpression exp = DiceExpression.Parse(dmg_str_2);
@@ -891,7 +891,7 @@ namespace Masterplan.Data
 								DiceExpression exp_adj = exp.Adjust(Session.Project.CampaignSettings.Damage);
 								if ((exp_adj != null) && (exp.ToString() != exp_adj.ToString()))
 								{
-									cp.Details = cp.Details.Replace(dmg_str_2, exp_adj + " (was " + dmg_str_2 +")");
+									cp.Details = cp.Details.Replace(dmg_str_2, exp_adj + " (" + Session.I18N.Was + " " + dmg_str_2 +")");
 								}
 							}
 						}

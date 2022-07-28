@@ -43,7 +43,7 @@
 			this.RuleLbl.Name = "RuleLbl";
 			this.RuleLbl.Size = new System.Drawing.Size(32, 13);
 			this.RuleLbl.TabIndex = 0;
-			this.RuleLbl.Text = "Rule:";
+			this.RuleLbl.Text = Session.I18N.Rule + ":";
 			// 
 			// RuleBox
 			// 
@@ -62,7 +62,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 4;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -74,7 +74,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 5;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// ValueLbl
@@ -84,7 +84,7 @@
 			this.ValueLbl.Name = "ValueLbl";
 			this.ValueLbl.Size = new System.Drawing.Size(37, 13);
 			this.ValueLbl.TabIndex = 2;
-			this.ValueLbl.Text = "Value:";
+			this.ValueLbl.Text = Session.I18N.Value + ":";
 			// 
 			// ValueBox
 			// 
@@ -115,7 +115,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Artifact Concordance Rule";
+			this.Text = Session.I18N.ArtifactConcordanceRule;
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

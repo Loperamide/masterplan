@@ -140,7 +140,7 @@ namespace Masterplan.Data
 			get
 			{
 				if ((fMovement == null) || (fMovement == ""))
-					return Creature.GetSpeed(fSize) + " squares";
+					return Creature.GetSpeed(fSize) + " " + Session.I18N.Squares;
 				else
 					return fMovement;
 			}
@@ -193,7 +193,7 @@ namespace Masterplan.Data
 		/// </summary>
 		public string Category
 		{
-			get { return "NPCs"; }
+			get { return Session.I18N.NPCs; }
 			set { }
 		}
 
@@ -623,7 +623,7 @@ namespace Masterplan.Data
         /// </summary>
         public string Info
         {
-            get { return "Level " + fLevel + " " + Role; }
+            get { return Session.I18N.Level + " " + fLevel + " " + Role; }
         }
 
         /// <summary>
@@ -636,7 +636,7 @@ namespace Masterplan.Data
 				string str = fSize + " " + fOrigin.ToString().ToLower();
 
 				if (fType == CreatureType.MagicalBeast)
-					str += " magical beast";
+					str += " " + Session.I18N.MagicalBeast;
 				else
 					str += " " + fType.ToString().ToLower();
 

@@ -50,7 +50,7 @@ namespace Masterplan.Controls
 
 			if (fHeroes == null)
 			{
-				e.Graphics.DrawString("(no heroes)", Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
+				e.Graphics.DrawString("(" + Session.I18N.NoHeroes + ")", Font, SystemBrushes.WindowText, ClientRectangle, fCentred);
 				return;
 			}
 
@@ -62,7 +62,7 @@ namespace Masterplan.Controls
 
 			for (int row = 0; row != fRows.Count + 1; ++row)
 			{
-				string str = "Total";
+				string str = Session.I18N.Total;
 				if (row != fRows.Count)
 				{
 					HeroRoleType role = fRows[row];
@@ -76,7 +76,7 @@ namespace Masterplan.Controls
 
 			for (int col = 0; col != fColumns.Count + 1; ++col)
 			{
-				string str = "Total";
+				string str = Session.I18N.Total;
 				if (col != fColumns.Count)
 				{
 					str = fColumns[col];

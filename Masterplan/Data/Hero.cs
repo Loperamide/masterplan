@@ -295,7 +295,7 @@ namespace Masterplan.Data
 		{
 			get
 			{
-				string str = "Level " + fLevel;
+				string str = Session.I18N.Level + " " + fLevel;
 
 				if (fRace != "")
 				{

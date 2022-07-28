@@ -242,7 +242,7 @@ namespace Masterplan.Data
 		{
 			get
 			{
-				string start = (fType == CreatureTemplateType.Functional) ? "Elite " : "";
+				string start = (fType == CreatureTemplateType.Functional) ? Session.I18N.Elite + " " : "";
 				string leader = (fLeader) ? " (L)" : "";
 
 				return start + fRole + leader;

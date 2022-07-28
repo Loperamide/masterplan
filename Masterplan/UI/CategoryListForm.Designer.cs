@@ -49,7 +49,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 1;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -61,7 +61,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 2;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// CatList
@@ -107,7 +107,7 @@
 			this.Toolbar.Name = "Toolbar";
 			this.Toolbar.Size = new System.Drawing.Size(237, 25);
 			this.Toolbar.TabIndex = 0;
-			this.Toolbar.Text = "toolStrip1";
+			this.Toolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// SelectBtn
 			// 
@@ -116,7 +116,7 @@
 			this.SelectBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SelectBtn.Name = "SelectBtn";
 			this.SelectBtn.Size = new System.Drawing.Size(59, 22);
-			this.SelectBtn.Text = "Select All";
+			this.SelectBtn.Text = Session.I18N.SelectAll;
 			this.SelectBtn.Click += new System.EventHandler(this.SelectBtn_Click);
 			// 
 			// DeselectBtn
@@ -126,7 +126,7 @@
 			this.DeselectBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.DeselectBtn.Name = "DeselectBtn";
 			this.DeselectBtn.Size = new System.Drawing.Size(72, 22);
-			this.DeselectBtn.Text = "Deselect All";
+			this.DeselectBtn.Text = Session.I18N.DeselectAll;
 			this.DeselectBtn.Click += new System.EventHandler(this.DeselectBtn_Click);
 			// 
 			// CategoryListForm
@@ -146,7 +146,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Categories";
+			this.Text = Session.I18N.Categories;
 			this.ListPanel.ResumeLayout(false);
 			this.ListPanel.PerformLayout();
 			this.Toolbar.ResumeLayout(false);
