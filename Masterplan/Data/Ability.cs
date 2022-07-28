@@ -103,5 +103,6 @@ namespace Masterplan.Data
 
 			return str + " (" + mod + ")";
 		}
+
 	}
 }
