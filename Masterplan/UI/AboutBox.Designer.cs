@@ -85,7 +85,7 @@
 			this.labelProductName.Name = "labelProductName";
 			this.labelProductName.Size = new System.Drawing.Size(271, 17);
 			this.labelProductName.TabIndex = 19;
-			this.labelProductName.Text = "Product Name";
+			this.labelProductName.Text = Session.I18N.ProductName;
 			this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// labelVersion
@@ -134,7 +134,7 @@
 			this.okButton.Name = "okButton";
 			this.okButton.Size = new System.Drawing.Size(75, 23);
 			this.okButton.TabIndex = 24;
-			this.okButton.Text = "&OK";
+			this.okButton.Text = "&" + Session.I18N.Ok;
 			// 
 			// AboutBox
 			// 

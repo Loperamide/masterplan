@@ -72,7 +72,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -114,7 +114,7 @@
 			this.HeaderPage.Padding = new System.Windows.Forms.Padding(3);
 			this.HeaderPage.Size = new System.Drawing.Size(333, 190);
 			this.HeaderPage.TabIndex = 2;
-			this.HeaderPage.Text = "Information";
+			this.HeaderPage.Text = Session.I18N.Information;
 			this.HeaderPage.UseVisualStyleBackColor = true;
 			// 
 			// RangeBox
@@ -133,7 +133,7 @@
 			this.RangeLbl.Name = "RangeLbl";
 			this.RangeLbl.Size = new System.Drawing.Size(42, 13);
 			this.RangeLbl.TabIndex = 8;
-			this.RangeLbl.Text = "Range:";
+			this.RangeLbl.Text = Session.I18N.Range + ":";
 			// 
 			// ActionBox
 			// 
@@ -151,7 +151,7 @@
 			this.TypeLbl.Name = "TypeLbl";
 			this.TypeLbl.Size = new System.Drawing.Size(34, 13);
 			this.TypeLbl.TabIndex = 2;
-			this.TypeLbl.Text = "Type:";
+			this.TypeLbl.Text = Session.I18N.Type + ":";
 			// 
 			// TypeBox
 			// 
@@ -169,7 +169,7 @@
 			this.ActionLbl.Name = "ActionLbl";
 			this.ActionLbl.Size = new System.Drawing.Size(40, 13);
 			this.ActionLbl.TabIndex = 6;
-			this.ActionLbl.Text = "Action:";
+			this.ActionLbl.Text = Session.I18N.Action + ":";
 			// 
 			// KeywordBox
 			// 
@@ -187,7 +187,7 @@
 			this.KeywordLbl.Name = "KeywordLbl";
 			this.KeywordLbl.Size = new System.Drawing.Size(56, 13);
 			this.KeywordLbl.TabIndex = 4;
-			this.KeywordLbl.Text = "Keywords:";
+			this.KeywordLbl.Text = Session.I18N.Keywords + ":";
 			// 
 			// ReadAloudPage
 			// 
@@ -197,7 +197,7 @@
 			this.ReadAloudPage.Padding = new System.Windows.Forms.Padding(3);
 			this.ReadAloudPage.Size = new System.Drawing.Size(333, 190);
 			this.ReadAloudPage.TabIndex = 0;
-			this.ReadAloudPage.Text = "Read-Aloud Text";
+			this.ReadAloudPage.Text = Session.I18N.LabelReadAloud;
 			this.ReadAloudPage.UseVisualStyleBackColor = true;
 			// 
 			// ReadAloudBox
@@ -221,7 +221,7 @@
 			this.SectionPage.Padding = new System.Windows.Forms.Padding(3);
 			this.SectionPage.Size = new System.Drawing.Size(333, 190);
 			this.SectionPage.TabIndex = 1;
-			this.SectionPage.Text = "Sections";
+			this.SectionPage.Text = Session.I18N.Sections;
 			this.SectionPage.UseVisualStyleBackColor = true;
 			// 
 			// SectionList
@@ -242,7 +242,7 @@
 			// 
 			// SectionHdr
 			// 
-			this.SectionHdr.Text = "Section";
+			this.SectionHdr.Text = Session.I18N.Section;
 			this.SectionHdr.Width = 300;
 			// 
 			// SectionToolbar
@@ -261,7 +261,7 @@
 			this.SectionToolbar.Name = "SectionToolbar";
 			this.SectionToolbar.Size = new System.Drawing.Size(327, 25);
 			this.SectionToolbar.TabIndex = 0;
-			this.SectionToolbar.Text = "toolStrip1";
+			this.SectionToolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// SectionAddBtn
 			// 
@@ -270,7 +270,7 @@
 			this.SectionAddBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionAddBtn.Name = "SectionAddBtn";
 			this.SectionAddBtn.Size = new System.Drawing.Size(33, 22);
-			this.SectionAddBtn.Text = "Add";
+			this.SectionAddBtn.Text = Session.I18N.Add;
 			this.SectionAddBtn.Click += new System.EventHandler(this.SectionAddBtn_Click);
 			// 
 			// SectionRemoveBtn
@@ -280,7 +280,7 @@
 			this.SectionRemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionRemoveBtn.Name = "SectionRemoveBtn";
 			this.SectionRemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.SectionRemoveBtn.Text = "Remove";
+			this.SectionRemoveBtn.Text = Session.I18N.Remove;
 			this.SectionRemoveBtn.Click += new System.EventHandler(this.SectionRemoveBtn_Click);
 			// 
 			// SectionEditBtn
@@ -290,7 +290,7 @@
 			this.SectionEditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionEditBtn.Name = "SectionEditBtn";
 			this.SectionEditBtn.Size = new System.Drawing.Size(31, 22);
-			this.SectionEditBtn.Text = "Edit";
+			this.SectionEditBtn.Text = Session.I18N.Edit;
 			this.SectionEditBtn.Click += new System.EventHandler(this.SectionEditBtn_Click);
 			// 
 			// toolStripSeparator1
@@ -305,7 +305,7 @@
 			this.SectionUpBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionUpBtn.Name = "SectionUpBtn";
 			this.SectionUpBtn.Size = new System.Drawing.Size(26, 22);
-			this.SectionUpBtn.Text = "Up";
+			this.SectionUpBtn.Text = Session.I18N.Up;
 			this.SectionUpBtn.Click += new System.EventHandler(this.SectionUpBtn_Click);
 			// 
 			// SectionDownBtn
@@ -315,7 +315,7 @@
 			this.SectionDownBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionDownBtn.Name = "SectionDownBtn";
 			this.SectionDownBtn.Size = new System.Drawing.Size(42, 22);
-			this.SectionDownBtn.Text = "Down";
+			this.SectionDownBtn.Text = Session.I18N.Down;
 			this.SectionDownBtn.Click += new System.EventHandler(this.SectionDownBtn_Click);
 			// 
 			// toolStripSeparator2
@@ -330,7 +330,7 @@
 			this.SectionLeftBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionLeftBtn.Name = "SectionLeftBtn";
 			this.SectionLeftBtn.Size = new System.Drawing.Size(31, 22);
-			this.SectionLeftBtn.Text = "Left";
+			this.SectionLeftBtn.Text = Session.I18N.Left;
 			this.SectionLeftBtn.Click += new System.EventHandler(this.SectionLeftBtn_Click);
 			// 
 			// SectionRightBtn
@@ -340,7 +340,7 @@
 			this.SectionRightBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SectionRightBtn.Name = "SectionRightBtn";
 			this.SectionRightBtn.Size = new System.Drawing.Size(39, 22);
-			this.SectionRightBtn.Text = "Right";
+			this.SectionRightBtn.Text = Session.I18N.Right;
 			this.SectionRightBtn.Click += new System.EventHandler(this.SectionRightBtn_Click);
 			// 
 			// OKBtn
@@ -351,7 +351,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 11;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -363,7 +363,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 12;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// OptionPowerForm
@@ -383,7 +383,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Power";
+			this.Text = Session.I18N.Power;
 			this.Pages.ResumeLayout(false);
 			this.HeaderPage.ResumeLayout(false);
 			this.HeaderPage.PerformLayout();

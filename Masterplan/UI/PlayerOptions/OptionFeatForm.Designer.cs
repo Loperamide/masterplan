@@ -50,7 +50,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -68,7 +68,7 @@
 			this.PrereqLbl.Name = "PrereqLbl";
 			this.PrereqLbl.Size = new System.Drawing.Size(70, 13);
 			this.PrereqLbl.TabIndex = 4;
-			this.PrereqLbl.Text = "Prerequisites:";
+			this.PrereqLbl.Text = Session.I18N.Prerequisites + ":";
 			// 
 			// PrereqBox
 			// 
@@ -99,7 +99,7 @@
 			this.BenefitPage.Padding = new System.Windows.Forms.Padding(3);
 			this.BenefitPage.Size = new System.Drawing.Size(351, 112);
 			this.BenefitPage.TabIndex = 0;
-			this.BenefitPage.Text = "Benefit";
+			this.BenefitPage.Text = Session.I18N.Benefit;
 			this.BenefitPage.UseVisualStyleBackColor = true;
 			// 
 			// BenefitBox
@@ -122,7 +122,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 7;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -134,7 +134,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 8;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// TierLbl
@@ -144,7 +144,7 @@
 			this.TierLbl.Name = "TierLbl";
 			this.TierLbl.Size = new System.Drawing.Size(28, 13);
 			this.TierLbl.TabIndex = 2;
-			this.TierLbl.Text = "Tier:";
+			this.TierLbl.Text = Session.I18N.Tier + ":";
 			// 
 			// TierBox
 			// 
@@ -178,7 +178,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Feat";
+			this.Text = Session.I18N.Feat;
 			this.Pages.ResumeLayout(false);
 			this.BenefitPage.ResumeLayout(false);
 			this.BenefitPage.PerformLayout();

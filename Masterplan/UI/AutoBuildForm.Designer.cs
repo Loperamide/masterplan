@@ -51,7 +51,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 12;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -63,7 +63,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 13;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// TemplateBox
@@ -84,7 +84,7 @@
 			this.LevelLbl.Name = "LevelLbl";
 			this.LevelLbl.Size = new System.Drawing.Size(36, 13);
 			this.LevelLbl.TabIndex = 4;
-			this.LevelLbl.Text = "Level:";
+			this.LevelLbl.Text = Session.I18N.Level + ":";
 			// 
 			// LevelBox
 			// 
@@ -117,7 +117,7 @@
 			this.DiffLbl.Name = "DiffLbl";
 			this.DiffLbl.Size = new System.Drawing.Size(50, 13);
 			this.DiffLbl.TabIndex = 2;
-			this.DiffLbl.Text = "Difficulty:";
+			this.DiffLbl.Text = Session.I18N.Difficulty + ":";
 			// 
 			// DiffBox
 			// 
@@ -137,7 +137,7 @@
 			this.TemplateLbl.Name = "TemplateLbl";
 			this.TemplateLbl.Size = new System.Drawing.Size(54, 13);
 			this.TemplateLbl.TabIndex = 0;
-			this.TemplateLbl.Text = "Template:";
+			this.TemplateLbl.Text = Session.I18N.Template + ":";
 			// 
 			// CatLbl
 			// 
@@ -146,7 +146,7 @@
 			this.CatLbl.Name = "CatLbl";
 			this.CatLbl.Size = new System.Drawing.Size(55, 13);
 			this.CatLbl.TabIndex = 6;
-			this.CatLbl.Text = "Creatures:";
+			this.CatLbl.Text = Session.I18N.Creatures + ":";
 			// 
 			// CatBtn
 			// 
@@ -156,7 +156,7 @@
 			this.CatBtn.Name = "CatBtn";
 			this.CatBtn.Size = new System.Drawing.Size(278, 23);
 			this.CatBtn.TabIndex = 7;
-			this.CatBtn.Text = "All Categories";
+			this.CatBtn.Text = Session.I18N.AllCategories;
 			this.CatBtn.UseVisualStyleBackColor = true;
 			this.CatBtn.Click += new System.EventHandler(this.CatBtn_Click);
 			// 
@@ -167,7 +167,7 @@
 			this.KeywordLbl.Name = "KeywordLbl";
 			this.KeywordLbl.Size = new System.Drawing.Size(56, 13);
 			this.KeywordLbl.TabIndex = 8;
-			this.KeywordLbl.Text = "Keywords:";
+			this.KeywordLbl.Text = Session.I18N.Keywords + ":";
 			// 
 			// KeywordBox
 			// 
@@ -207,7 +207,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "AutoBuild Options";
+			this.Text = Session.I18N.AutoBuildOptions;
 			((System.ComponentModel.ISupportInitialize)(this.LevelBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

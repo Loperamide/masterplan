@@ -1052,7 +1052,7 @@ namespace Masterplan.UI
 		private void CreatureAddBtn_Click(object sender, EventArgs e)
 		{
 			Creature c = new Creature();
-			c.Name = "New Creature";
+			c.Name = Session.I18N.NewCreature;
 
 			CreatureBuilderForm dlg = new CreatureBuilderForm(c);
 			if (dlg.ShowDialog() == DialogResult.OK)
@@ -1266,7 +1266,7 @@ namespace Masterplan.UI
 			if (SelectedCreatures.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.CreatureFilter;
 				dlg.FileName = SelectedCreatures[0].Name;
 
@@ -1522,7 +1522,7 @@ namespace Masterplan.UI
 		private void TemplateAddBtn_Click(object sender, EventArgs e)
 		{
 			CreatureTemplate ct = new CreatureTemplate();
-			ct.Name = "New Template";
+			ct.Name = Session.I18N.NewTemplate;
 
 			CreatureTemplateBuilderForm dlg = new CreatureTemplateBuilderForm(ct);
 			if (dlg.ShowDialog() == DialogResult.OK)
@@ -1739,7 +1739,7 @@ namespace Masterplan.UI
 			if (SelectedTemplates.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.CreatureTemplateFilter;
 				dlg.FileName = SelectedTemplates[0].Name;
 
@@ -1749,7 +1749,7 @@ namespace Masterplan.UI
 			else if (SelectedThemes.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.ThemeFilter;
 				dlg.FileName = SelectedThemes[0].Name;
 
@@ -1868,7 +1868,7 @@ namespace Masterplan.UI
 		private void TrapAddBtn_Click(object sender, EventArgs e)
 		{
 			Trap t = new Trap();
-			t.Name = "New Trap";
+			t.Name = Session.I18N.NewTrap;
 			t.Attacks.Add(new TrapAttack());
 
 			TrapBuilderForm dlg = new TrapBuilderForm(t);
@@ -2023,7 +2023,7 @@ namespace Masterplan.UI
 			if (SelectedTraps.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.TrapFilter;
 				dlg.FileName = SelectedTraps[0].Name;
 
@@ -2284,7 +2284,7 @@ namespace Masterplan.UI
 			if (SelectedChallenges.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.SkillChallengeFilter;
 				dlg.FileName = SelectedChallenges[0].Name;
 
@@ -2375,7 +2375,7 @@ namespace Masterplan.UI
 		private void MagicItemAddBtn_Click(object sender, EventArgs e)
 		{
 			MagicItem mi = new MagicItem();
-			mi.Name = "New Magic Item";
+			mi.Name = Session.I18N.NewMagicItem;
 
 			MagicItemBuilderForm dlg = new MagicItemBuilderForm(mi);
 			if (dlg.ShowDialog() == DialogResult.OK)
@@ -2537,7 +2537,7 @@ namespace Masterplan.UI
 			if (SelectedMagicItemSet != "")
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.MagicItemFilter;
 				dlg.FileName = SelectedMagicItemSet;
 
@@ -2868,7 +2868,7 @@ namespace Masterplan.UI
 			if (SelectedTiles.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.MapTileFilter;
 				dlg.FileName = SelectedTiles[0].ToString();
 
@@ -3234,7 +3234,7 @@ namespace Masterplan.UI
 			if (SelectedTerrainPowers.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.TerrainPowerFilter;
 				dlg.FileName = SelectedTerrainPowers[0].Name;
 
@@ -3326,7 +3326,7 @@ namespace Masterplan.UI
 		private void ArtifactAddAdd_Click(object sender, EventArgs e)
 		{
 			Artifact a = new Artifact();
-			a.Name = "New Artifact";
+			a.Name = Session.I18N.NewArtifact;
 
 			ArtifactBuilderForm dlg = new ArtifactBuilderForm(a);
 			if (dlg.ShowDialog() == DialogResult.OK)
@@ -3459,7 +3459,7 @@ namespace Masterplan.UI
 			if (SelectedArtifacts.Count == 1)
 			{
 				SaveFileDialog dlg = new SaveFileDialog();
-				dlg.Title = "Export";
+				dlg.Title = Session.I18N.Export;
 				dlg.Filter = Program.ArtifactFilter;
 				dlg.FileName = SelectedArtifacts[0].Name;
 

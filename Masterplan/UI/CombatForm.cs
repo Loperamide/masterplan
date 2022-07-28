@@ -1992,7 +1992,7 @@ namespace Masterplan.UI
 						update_preview_panel();
 					}
 
-					if (e.Url.LocalPath == "manual")
+					if (e.Url.LocalPath == Session.I18N.Manual.ToLower())
 					{
 						switch (Session.Preferences.InitiativeMode)
 						{
@@ -2045,7 +2045,7 @@ namespace Masterplan.UI
 						update_preview_panel();
 					}
 
-					if (e.Url.LocalPath == "manual")
+					if (e.Url.LocalPath == Session.I18N.Manual.ToLower())
 					{
 						Session.Preferences.HeroInitiativeMode = InitiativeMode.ManualIndividual;
 						update_preview_panel();
@@ -2062,7 +2062,7 @@ namespace Masterplan.UI
 						update_preview_panel();
 					}
 
-					if (e.Url.LocalPath == "manual")
+					if (e.Url.LocalPath == Session.I18N.Manual.ToLower())
 					{
 						Session.Preferences.TrapInitiativeMode = InitiativeMode.ManualIndividual;
 						update_preview_panel();
@@ -6221,7 +6221,7 @@ namespace Masterplan.UI
 
 						name = creature.Category;
 						if (name == "")
-							name = "Creature";
+							name = Session.I18N.Creature;
 					}
 				}
 

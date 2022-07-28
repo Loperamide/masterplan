@@ -101,7 +101,7 @@
 			this.FilterNameToggle.Name = "FilterNameToggle";
 			this.FilterNameToggle.Size = new System.Drawing.Size(57, 17);
 			this.FilterNameToggle.TabIndex = 0;
-			this.FilterNameToggle.Text = "Name:";
+			this.FilterNameToggle.Text = Session.I18N.Name + ":";
 			this.FilterNameToggle.UseVisualStyleBackColor = true;
 			this.FilterNameToggle.Click += new System.EventHandler(this.ToggleChanged);
 			// 

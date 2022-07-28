@@ -66,7 +66,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 2;
-			this.OKBtn.Text = "Close";
+			this.OKBtn.Text = Session.I18N.Close;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -105,22 +105,22 @@
 			// 
 			// columnHeader4
 			// 
-			this.columnHeader4.Text = "Target";
+			this.columnHeader4.Text = Session.I18N.Target;
 			this.columnHeader4.Width = 120;
 			// 
 			// columnHeader1
 			// 
-			this.columnHeader1.Text = "Roll";
+			this.columnHeader1.Text = Session.I18N.Roll;
 			this.columnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// columnHeader2
 			// 
-			this.columnHeader2.Text = "Bonus";
+			this.columnHeader2.Text = Session.I18N.Bonus;
 			this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// columnHeader3
 			// 
-			this.columnHeader3.Text = "Total";
+			this.columnHeader3.Text = Session.I18N.Total;
 			this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// Pages
@@ -142,7 +142,7 @@
 			this.AttackPage.Padding = new System.Windows.Forms.Padding(3);
 			this.AttackPage.Size = new System.Drawing.Size(335, 134);
 			this.AttackPage.TabIndex = 0;
-			this.AttackPage.Text = "Attack Rolls";
+			this.AttackPage.Text = Session.I18N.AttackRolls;
 			this.AttackPage.UseVisualStyleBackColor = true;
 			// 
 			// DamagePage
@@ -161,7 +161,7 @@
 			this.DamagePage.Padding = new System.Windows.Forms.Padding(3);
 			this.DamagePage.Size = new System.Drawing.Size(335, 134);
 			this.DamagePage.TabIndex = 1;
-			this.DamagePage.Text = "Damage Rolls";
+			this.DamagePage.Text = Session.I18N.DamageRolls;
 			this.DamagePage.UseVisualStyleBackColor = true;
 			// 
 			// RollDamageBtn
@@ -171,7 +171,7 @@
 			this.RollDamageBtn.Name = "RollDamageBtn";
 			this.RollDamageBtn.Size = new System.Drawing.Size(75, 23);
 			this.RollDamageBtn.TabIndex = 9;
-			this.RollDamageBtn.Text = "Reroll";
+			this.RollDamageBtn.Text = Session.I18N.Reroll;
 			this.RollDamageBtn.UseVisualStyleBackColor = true;
 			this.RollDamageBtn.Click += new System.EventHandler(this.RollDamageBtn_Click);
 			// 
@@ -182,7 +182,7 @@
 			this.MissValueLbl.Name = "MissValueLbl";
 			this.MissValueLbl.Size = new System.Drawing.Size(33, 13);
 			this.MissValueLbl.TabIndex = 8;
-			this.MissValueLbl.Text = "[miss]";
+			this.MissValueLbl.Text = Session.I18N.Miss;
 			// 
 			// CritValueLbl
 			// 
@@ -191,7 +191,7 @@
 			this.CritValueLbl.Name = "CritValueLbl";
 			this.CritValueLbl.Size = new System.Drawing.Size(27, 13);
 			this.CritValueLbl.TabIndex = 7;
-			this.CritValueLbl.Text = "[crit]";
+			this.CritValueLbl.Text = Session.I18N.Crit;
 			// 
 			// MissLbl
 			// 
@@ -200,7 +200,7 @@
 			this.MissLbl.Name = "MissLbl";
 			this.MissLbl.Size = new System.Drawing.Size(74, 13);
 			this.MissLbl.TabIndex = 6;
-			this.MissLbl.Text = "On Miss (half):";
+			this.MissLbl.Text = Session.I18N.MissHalf + ":";
 			// 
 			// CritLbl
 			// 
@@ -209,7 +209,7 @@
 			this.CritLbl.Name = "CritLbl";
 			this.CritLbl.Size = new System.Drawing.Size(86, 13);
 			this.CritLbl.TabIndex = 4;
-			this.CritLbl.Text = "On Critical (max):";
+			this.CritLbl.Text = Session.I18N.CriticalMax + ":";
 			// 
 			// DamageBox
 			// 
@@ -228,7 +228,7 @@
 			this.HitLbl.Name = "HitLbl";
 			this.HitLbl.Size = new System.Drawing.Size(40, 13);
 			this.HitLbl.TabIndex = 2;
-			this.HitLbl.Text = "On Hit:";
+			this.HitLbl.Text = Session.I18N.OnHit + ":";
 			// 
 			// DamageExpLbl
 			// 
@@ -238,7 +238,7 @@
 			this.DamageExpLbl.Name = "DamageExpLbl";
 			this.DamageExpLbl.Size = new System.Drawing.Size(38, 13);
 			this.DamageExpLbl.TabIndex = 1;
-			this.DamageExpLbl.Text = "[dmg]";
+			this.DamageExpLbl.Text = Session.I18N.DMG;
 			// 
 			// DamageInfoLbl
 			// 
@@ -247,7 +247,7 @@
 			this.DamageInfoLbl.Name = "DamageInfoLbl";
 			this.DamageInfoLbl.Size = new System.Drawing.Size(50, 13);
 			this.DamageInfoLbl.TabIndex = 0;
-			this.DamageInfoLbl.Text = "Damage:";
+			this.DamageInfoLbl.Text = Session.I18N.Damage + ":";
 			// 
 			// Splitter
 			// 
@@ -277,7 +277,7 @@
 			this.ApplyDamageBox.Name = "ApplyDamageBox";
 			this.ApplyDamageBox.Size = new System.Drawing.Size(136, 17);
 			this.ApplyDamageBox.TabIndex = 1;
-			this.ApplyDamageBox.Text = "Apply damage on close";
+			this.ApplyDamageBox.Text = Session.I18N.DamageOnClose;
 			this.ApplyDamageBox.UseVisualStyleBackColor = true;
 			// 
 			// AttackRollForm
@@ -296,7 +296,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Attack Roll";
+			this.Text = Session.I18N.AttackRoll;
 			this.Pages.ResumeLayout(false);
 			this.AttackPage.ResumeLayout(false);
 			this.DamagePage.ResumeLayout(false);

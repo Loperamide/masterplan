@@ -18,10 +18,10 @@ namespace Masterplan.Controls
 				FilterRoleBox.Items.Add(role);
 			FilterRoleBox.SelectedIndex = 0;
 
-			FilterModBox.Items.Add("Standard");
-			FilterModBox.Items.Add("Elite");
-			FilterModBox.Items.Add("Solo");
-			FilterModBox.Items.Add("Minion");
+			FilterModBox.Items.Add(Session.I18N.Standard);
+			FilterModBox.Items.Add(Session.I18N.Elite);
+			FilterModBox.Items.Add(Session.I18N.Solo);
+			FilterModBox.Items.Add(Session.I18N.Minion);
 			FilterModBox.SelectedIndex = 0;
 
 			Array origins = Enum.GetValues(typeof(CreatureOrigin));
@@ -145,21 +145,21 @@ namespace Masterplan.Controls
 					RoleFlag flag = RoleFlag.Standard;
 					bool minion = false;
 
-					if (FilterModBox.Text == "Standard")
+					if (FilterModBox.Text == Session.I18N.Standard)
 					{
 					}
 
-					if (FilterModBox.Text == "Elite")
+					if (FilterModBox.Text == Session.I18N.Elite)
 					{
 						flag = RoleFlag.Elite;
 					}
 
-					if (FilterModBox.Text == "Solo")
+					if (FilterModBox.Text == Session.I18N.Solo)
 					{
 						flag = RoleFlag.Solo;
 					}
 
-					if (FilterModBox.Text == "Minion")
+					if (FilterModBox.Text == Session.I18N.Minion)
 					{
 						minion = true;
 					}
@@ -433,21 +433,21 @@ namespace Masterplan.Controls
 					RoleFlag flag = RoleFlag.Standard;
 					bool minion = false;
 
-					if (FilterModBox.Text == "Standard")
+					if (FilterModBox.Text == Session.I18N.Standard)
 					{
 					}
 
-					if (FilterModBox.Text == "Elite")
+					if (FilterModBox.Text == Session.I18N.Elite)
 					{
 						flag = RoleFlag.Elite;
 					}
 
-					if (FilterModBox.Text == "Solo")
+					if (FilterModBox.Text == Session.I18N.Solo)
 					{
 						flag = RoleFlag.Solo;
 					}
 
-					if (FilterModBox.Text == "Minion")
+					if (FilterModBox.Text == Session.I18N.Minion)
 					{
 						minion = true;
 					}
@@ -620,7 +620,7 @@ namespace Masterplan.Controls
 					}
 
 					FilterModToggle.Checked = true;
-					FilterModBox.SelectedItem = "Minion";
+					FilterModBox.SelectedItem = Session.I18N.Minion;
 
 					set_filter = true;
 				}
@@ -759,14 +759,14 @@ namespace Masterplan.Controls
 				FilterPnl.Visible = true;
 
 				InfoLbl.Text = "";
-				EditLbl.Text = "Collapse";
+				EditLbl.Text = Session.I18N.Collapse;
 			}
 			else
 			{
 				FilterPnl.Visible = false;
 
 				InfoLbl.Text = get_filter_string();
-				EditLbl.Text = "Expand";
+				EditLbl.Text = Session.I18N.Expand;
 			}
 		}
 
@@ -779,7 +779,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Name: " + FilterNameBox.Text;
+				str += Session.I18N.Name + ": " + FilterNameBox.Text;
 			}
 
 			if (FilterCatToggle.Checked && FilterCatToggle.Enabled && (FilterCatBox.Text != ""))
@@ -787,7 +787,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Category: " + FilterCatBox.Text;
+				str += Session.I18N.Category + ": " + FilterCatBox.Text;
 			}
 
 			string role = "";
@@ -807,7 +807,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Role: " + role;
+				str += Session.I18N.Role + ": " + role;
 			}
 
 			if (FilterTypeToggle.Checked && FilterTypeToggle.Enabled)
@@ -815,7 +815,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Type: " + FilterTypeBox.SelectedItem;
+				str += Session.I18N.Type + ": " + FilterTypeBox.SelectedItem;
 			}
 
 			if (FilterOriginToggle.Checked && FilterOriginToggle.Enabled)
@@ -823,7 +823,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Origin: " + FilterOriginBox.SelectedItem;
+				str += Session.I18N.Origin + ": " + FilterOriginBox.SelectedItem;
 			}
 
 			if (FilterKeywordToggle.Checked && FilterKeywordToggle.Enabled && (FilterKeywordBox.Text != ""))
@@ -831,7 +831,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Keywords: " + FilterKeywordBox.Text;
+				str += Session.I18N.Keywords + ": " + FilterKeywordBox.Text;
 			}
 
 			if (FilterLevelToggle.Checked && FilterLevelToggle.Enabled)
@@ -842,9 +842,9 @@ namespace Masterplan.Controls
 				int lvl_from = (int)LevelFromBox.Value;
 				int lvl_to = (int)LevelToBox.Value;
 				if (lvl_from == lvl_to)
-					str += "Level: " + lvl_from;
+					str += Session.I18N.Level + ": " + lvl_from;
 				else
-					str += "Level: " + lvl_from + "-" + lvl_to;
+					str += Session.I18N.Level + ": " + lvl_from + "-" + lvl_to;
 			}
 
 			if (FilterLevelAppropriateToggle.Checked && FilterLevelAppropriateToggle.Enabled)
@@ -852,7 +852,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Level-appropriate only";
+				str += Session.I18N.Level + "-" + Session.I18N.AppropriateOnly;
 			}
 
 			if (FilterSourceToggle.Checked && FilterSourceToggle.Enabled)
@@ -860,7 +860,7 @@ namespace Masterplan.Controls
 				if (str != "")
 					str += "; ";
 
-				str += "Source: " + FilterSourceBox.SelectedItem;
+				str += Session.I18N.Source + ": " + FilterSourceBox.SelectedItem;
 			}
 
 			return str;

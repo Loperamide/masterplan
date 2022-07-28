@@ -69,7 +69,7 @@
 			this.ArtilleryBox.Name = "ArtilleryBox";
 			this.ArtilleryBox.Size = new System.Drawing.Size(59, 17);
 			this.ArtilleryBox.TabIndex = 0;
-			this.ArtilleryBox.Text = "Artillery";
+			this.ArtilleryBox.Text = Session.I18N.Artillery;
 			this.ArtilleryBox.UseVisualStyleBackColor = true;
 			// 
 			// BruteBox
@@ -130,7 +130,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 3;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -142,7 +142,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 4;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// RoleGroup

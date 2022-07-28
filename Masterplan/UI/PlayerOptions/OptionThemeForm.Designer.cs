@@ -64,7 +64,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -98,7 +98,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(341, 191);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// QuoteBox
@@ -118,7 +118,7 @@
 			this.QuoteLbl.Name = "QuoteLbl";
 			this.QuoteLbl.Size = new System.Drawing.Size(39, 13);
 			this.QuoteLbl.TabIndex = 1;
-			this.QuoteLbl.Text = "Quote:";
+			this.QuoteLbl.Text = Session.I18N.Quote + ":";
 			// 
 			// DetailsBox
 			// 
@@ -143,7 +143,7 @@
 			this.LevelPage.Padding = new System.Windows.Forms.Padding(3);
 			this.LevelPage.Size = new System.Drawing.Size(341, 193);
 			this.LevelPage.TabIndex = 2;
-			this.LevelPage.Text = "Levels";
+			this.LevelPage.Text = Session.I18N.Levels;
 			this.LevelPage.UseVisualStyleBackColor = true;
 			// 
 			// LevelList
@@ -165,7 +165,7 @@
 			// 
 			// FeatureHdr
 			// 
-			this.FeatureHdr.Text = "Feature";
+			this.FeatureHdr.Text = Session.I18N.Feature;
 			this.FeatureHdr.Width = 300;
 			// 
 			// LevelToolbar
@@ -176,7 +176,7 @@
 			this.LevelToolbar.Name = "LevelToolbar";
 			this.LevelToolbar.Size = new System.Drawing.Size(335, 25);
 			this.LevelToolbar.TabIndex = 0;
-			this.LevelToolbar.Text = "toolStrip1";
+			this.LevelToolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// LevelEditBtn
 			// 
@@ -185,7 +185,7 @@
 			this.LevelEditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.LevelEditBtn.Name = "LevelEditBtn";
 			this.LevelEditBtn.Size = new System.Drawing.Size(31, 22);
-			this.LevelEditBtn.Text = "Edit";
+			this.LevelEditBtn.Text = Session.I18N.Edit;
 			this.LevelEditBtn.Click += new System.EventHandler(this.FeatureEditBtn_Click);
 			// 
 			// OKBtn
@@ -196,7 +196,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 11;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -208,7 +208,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 12;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// PrereqBox
@@ -227,7 +227,7 @@
 			this.PrereqLbl.Name = "PrereqLbl";
 			this.PrereqLbl.Size = new System.Drawing.Size(70, 13);
 			this.PrereqLbl.TabIndex = 2;
-			this.PrereqLbl.Text = "Prerequisites:";
+			this.PrereqLbl.Text = Session.I18N.Prerequisites + ":";
 			// 
 			// SourceLbl
 			// 
@@ -236,7 +236,7 @@
 			this.SourceLbl.Name = "SourceLbl";
 			this.SourceLbl.Size = new System.Drawing.Size(77, 13);
 			this.SourceLbl.TabIndex = 6;
-			this.SourceLbl.Text = "Power Source:";
+			this.SourceLbl.Text = Session.I18N.PowerSource + ":";
 			// 
 			// RoleLbl
 			// 
@@ -245,7 +245,7 @@
 			this.RoleLbl.Name = "RoleLbl";
 			this.RoleLbl.Size = new System.Drawing.Size(86, 13);
 			this.RoleLbl.TabIndex = 4;
-			this.RoleLbl.Text = "Secondary Role:";
+			this.RoleLbl.Text = Session.I18N.SecondaryRole + ":";
 			// 
 			// PowerLbl
 			// 
@@ -254,7 +254,7 @@
 			this.PowerLbl.Name = "PowerLbl";
 			this.PowerLbl.Size = new System.Drawing.Size(81, 13);
 			this.PowerLbl.TabIndex = 8;
-			this.PowerLbl.Text = "Granted Power:";
+			this.PowerLbl.Text = Session.I18N.GrantedPower + ":";
 			// 
 			// PowerBtn
 			// 
@@ -262,7 +262,7 @@
 			this.PowerBtn.Name = "PowerBtn";
 			this.PowerBtn.Size = new System.Drawing.Size(257, 23);
 			this.PowerBtn.TabIndex = 9;
-			this.PowerBtn.Text = "Edit";
+			this.PowerBtn.Text = Session.I18N.Edit;
 			this.PowerBtn.UseVisualStyleBackColor = true;
 			this.PowerBtn.Click += new System.EventHandler(this.PowerBtn_Click);
 			// 
@@ -313,7 +313,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Theme";
+			this.Text = Session.I18N.Theme;
 			this.Pages.ResumeLayout(false);
 			this.DetailsPage.ResumeLayout(false);
 			this.DetailsPage.PerformLayout();

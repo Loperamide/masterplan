@@ -28,10 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Class Features", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Heroic Tier", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Paragon Tier", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Epic Tier", System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup(Session.I18N.ClassFeatures, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup(Session.I18N.HeroicTier, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup(Session.I18N.ParagonTier, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup(Session.I18N.EpicTier, System.Windows.Forms.HorizontalAlignment.Left);
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionClassForm));
 			this.OKBtn = new System.Windows.Forms.Button();
 			this.CancelBtn = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 1;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -110,7 +110,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 2;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// NameLbl
@@ -120,7 +120,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -138,7 +138,7 @@
 			this.RoleLbl.Name = "RoleLbl";
 			this.RoleLbl.Size = new System.Drawing.Size(32, 13);
 			this.RoleLbl.TabIndex = 2;
-			this.RoleLbl.Text = "Role:";
+			this.RoleLbl.Text = Session.I18N.Role + ":";
 			// 
 			// RoleBox
 			// 
@@ -158,7 +158,7 @@
 			this.PowerSourceLbl.Name = "PowerSourceLbl";
 			this.PowerSourceLbl.Size = new System.Drawing.Size(77, 13);
 			this.PowerSourceLbl.TabIndex = 4;
-			this.PowerSourceLbl.Text = "Power Source:";
+			this.PowerSourceLbl.Text = Session.I18N.PowerSource + ":";
 			// 
 			// PowerSourceBox
 			// 
@@ -208,7 +208,7 @@
 			this.GeneralPage.Padding = new System.Windows.Forms.Padding(3);
 			this.GeneralPage.Size = new System.Drawing.Size(341, 256);
 			this.GeneralPage.TabIndex = 0;
-			this.GeneralPage.Text = "General";
+			this.GeneralPage.Text = Session.I18N.General;
 			this.GeneralPage.UseVisualStyleBackColor = true;
 			// 
 			// SurgeBox
@@ -227,7 +227,7 @@
 			this.SurgeLbl.Name = "SurgeLbl";
 			this.SurgeLbl.Size = new System.Drawing.Size(82, 13);
 			this.SurgeLbl.TabIndex = 12;
-			this.SurgeLbl.Text = "Healing Surges:";
+			this.SurgeLbl.Text = Session.I18N.HealingSurges + ":";
 			// 
 			// HPSubsequentBox
 			// 
@@ -245,7 +245,7 @@
 			this.HPSubsequentLbl.Name = "HPSubsequentLbl";
 			this.HPSubsequentLbl.Size = new System.Drawing.Size(74, 13);
 			this.HPSubsequentLbl.TabIndex = 10;
-			this.HPSubsequentLbl.Text = "HP (per level):";
+			this.HPSubsequentLbl.Text = Session.I18N.HPPerLevel + ":";
 			// 
 			// HPFirstBox
 			// 
@@ -263,7 +263,7 @@
 			this.HPFirstLbl.Name = "HPFirstLbl";
 			this.HPFirstLbl.Size = new System.Drawing.Size(75, 13);
 			this.HPFirstLbl.TabIndex = 8;
-			this.HPFirstLbl.Text = "HP (first level):";
+			this.HPFirstLbl.Text = Session.I18N.HPFirstLevel + ":";
 			// 
 			// KeyAbilityBox
 			// 
@@ -281,7 +281,7 @@
 			this.KeyAbilityLbl.Name = "KeyAbilityLbl";
 			this.KeyAbilityLbl.Size = new System.Drawing.Size(66, 13);
 			this.KeyAbilityLbl.TabIndex = 6;
-			this.KeyAbilityLbl.Text = "Key Abilities:";
+			this.KeyAbilityLbl.Text = Session.I18N.KeyAbilities + ":";
 			// 
 			// ProficiencyPage
 			// 
@@ -300,7 +300,7 @@
 			this.ProficiencyPage.Padding = new System.Windows.Forms.Padding(3);
 			this.ProficiencyPage.Size = new System.Drawing.Size(341, 256);
 			this.ProficiencyPage.TabIndex = 1;
-			this.ProficiencyPage.Text = "Proficiencies";
+			this.ProficiencyPage.Text = Session.I18N.Proficiencies;
 			this.ProficiencyPage.UseVisualStyleBackColor = true;
 			// 
 			// SkillBox
@@ -321,7 +321,7 @@
 			this.SkillLbl.Name = "SkillLbl";
 			this.SkillLbl.Size = new System.Drawing.Size(79, 62);
 			this.SkillLbl.TabIndex = 8;
-			this.SkillLbl.Text = "Trained Skills:";
+			this.SkillLbl.Text = Session.I18N.TrainedSkills + ":";
 			// 
 			// DefencesBox
 			// 
@@ -339,7 +339,7 @@
 			this.DefencesLbl.Name = "DefencesLbl";
 			this.DefencesLbl.Size = new System.Drawing.Size(56, 13);
 			this.DefencesLbl.TabIndex = 6;
-			this.DefencesLbl.Text = "Defences:";
+			this.DefencesLbl.Text = Session.I18N.Defences + ":";
 			// 
 			// ImplementBox
 			// 
@@ -358,7 +358,7 @@
 			this.ImplementLbl.Name = "ImplementLbl";
 			this.ImplementLbl.Size = new System.Drawing.Size(79, 42);
 			this.ImplementLbl.TabIndex = 4;
-			this.ImplementLbl.Text = "Implements:";
+			this.ImplementLbl.Text = Session.I18N.Implements + ":";
 			// 
 			// WeaponBox
 			// 
@@ -377,7 +377,7 @@
 			this.WeaponLbl.Name = "WeaponLbl";
 			this.WeaponLbl.Size = new System.Drawing.Size(79, 42);
 			this.WeaponLbl.TabIndex = 2;
-			this.WeaponLbl.Text = "Weapon Proficiencies:";
+			this.WeaponLbl.Text = Session.I18N.WeaponProficiencies + ":";
 			// 
 			// ArmourBox
 			// 
@@ -396,7 +396,7 @@
 			this.ArmourLbl.Name = "ArmourLbl";
 			this.ArmourLbl.Size = new System.Drawing.Size(79, 42);
 			this.ArmourLbl.TabIndex = 0;
-			this.ArmourLbl.Text = "Armour Proficiencies:";
+			this.ArmourLbl.Text = Session.I18N.ArmourProficiencies + ":";
 			// 
 			// DescriptionPage
 			// 
@@ -408,7 +408,7 @@
 			this.DescriptionPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DescriptionPage.Size = new System.Drawing.Size(341, 256);
 			this.DescriptionPage.TabIndex = 2;
-			this.DescriptionPage.Text = "Description";
+			this.DescriptionPage.Text = Session.I18N.Description;
 			this.DescriptionPage.UseVisualStyleBackColor = true;
 			// 
 			// QuoteBox
@@ -428,7 +428,7 @@
 			this.QuoteLbl.Name = "QuoteLbl";
 			this.QuoteLbl.Size = new System.Drawing.Size(39, 13);
 			this.QuoteLbl.TabIndex = 4;
-			this.QuoteLbl.Text = "Quote:";
+			this.QuoteLbl.Text = Session.I18N.Quote + ":";
 			// 
 			// DescBox
 			// 
@@ -457,7 +457,7 @@
 			this.OverviewPage.Padding = new System.Windows.Forms.Padding(3);
 			this.OverviewPage.Size = new System.Drawing.Size(341, 256);
 			this.OverviewPage.TabIndex = 3;
-			this.OverviewPage.Text = "Overview";
+			this.OverviewPage.Text = Session.I18N.Overview;
 			this.OverviewPage.UseVisualStyleBackColor = true;
 			// 
 			// RacesBox
@@ -479,7 +479,7 @@
 			this.RacesLbl.Name = "RacesLbl";
 			this.RacesLbl.Size = new System.Drawing.Size(41, 13);
 			this.RacesLbl.TabIndex = 4;
-			this.RacesLbl.Text = "Races:";
+			this.RacesLbl.Text = Session.I18N.Races + ":";
 			// 
 			// ReligionBox
 			// 
@@ -500,7 +500,7 @@
 			this.ReligionLbl.Name = "ReligionLbl";
 			this.ReligionLbl.Size = new System.Drawing.Size(48, 13);
 			this.ReligionLbl.TabIndex = 2;
-			this.ReligionLbl.Text = "Religion:";
+			this.ReligionLbl.Text = Session.I18N.Religion + ":";
 			// 
 			// CharacteristicsBox
 			// 
@@ -521,7 +521,7 @@
 			this.CharacteristicsLbl.Name = "CharacteristicsLbl";
 			this.CharacteristicsLbl.Size = new System.Drawing.Size(79, 13);
 			this.CharacteristicsLbl.TabIndex = 0;
-			this.CharacteristicsLbl.Text = "Characteristics:";
+			this.CharacteristicsLbl.Text = Session.I18N.Characteristics + ":";
 			// 
 			// LevelPage
 			// 
@@ -532,7 +532,7 @@
 			this.LevelPage.Padding = new System.Windows.Forms.Padding(3);
 			this.LevelPage.Size = new System.Drawing.Size(341, 256);
 			this.LevelPage.TabIndex = 4;
-			this.LevelPage.Text = "Levels";
+			this.LevelPage.Text = Session.I18N.Levels;
 			this.LevelPage.UseVisualStyleBackColor = true;
 			// 
 			// LevelList
@@ -541,13 +541,13 @@
             this.LevelHdr});
 			this.LevelList.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.LevelList.FullRowSelect = true;
-			listViewGroup5.Header = "Class Features";
+			listViewGroup5.Header = Session.I18N.ClassFeatures;
 			listViewGroup5.Name = "listViewGroup1";
-			listViewGroup6.Header = "Heroic Tier";
+			listViewGroup6.Header = Session.I18N.HeroicTier;
 			listViewGroup6.Name = "listViewGroup2";
-			listViewGroup7.Header = "Paragon Tier";
+			listViewGroup7.Header = Session.I18N.ParagonTier;
 			listViewGroup7.Name = "listViewGroup3";
-			listViewGroup8.Header = "Epic Tier";
+			listViewGroup8.Header = Session.I18N.EpicTier;
 			listViewGroup8.Name = "listViewGroup4";
 			this.LevelList.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup5,
@@ -567,7 +567,7 @@
 			// 
 			// LevelHdr
 			// 
-			this.LevelHdr.Text = "Level";
+			this.LevelHdr.Text = Session.I18N.Level;
 			this.LevelHdr.Width = 300;
 			// 
 			// LevelToolbar
@@ -578,7 +578,7 @@
 			this.LevelToolbar.Name = "LevelToolbar";
 			this.LevelToolbar.Size = new System.Drawing.Size(335, 25);
 			this.LevelToolbar.TabIndex = 0;
-			this.LevelToolbar.Text = "toolStrip1";
+			this.LevelToolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// EditBtn
 			// 
@@ -587,7 +587,7 @@
 			this.EditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EditBtn.Name = "EditBtn";
 			this.EditBtn.Size = new System.Drawing.Size(31, 22);
-			this.EditBtn.Text = "Edit";
+			this.EditBtn.Text = Session.I18N.Edit;
 			this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
 			// 
 			// OptionClassForm
@@ -607,7 +607,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Class";
+			this.Text = Session.I18N.Class;
 			this.Pages.ResumeLayout(false);
 			this.GeneralPage.ResumeLayout(false);
 			this.GeneralPage.PerformLayout();

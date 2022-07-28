@@ -91,7 +91,7 @@ namespace Masterplan.UI
 
 			if (e.Url.Scheme == "section")
 			{
-				if (e.Url.LocalPath == "new")
+				if (e.Url.LocalPath == Session.I18N.New)
 				{
 					e.Cancel = true;
 
@@ -227,7 +227,7 @@ namespace Masterplan.UI
 			{
 				e.Cancel = true;
 
-				if (e.Url.LocalPath == "new")
+				if (e.Url.LocalPath == Session.I18N.New)
 				{
 					Pair<string, string> rule = new Pair<string, string>("", "");
 					ArtifactConcordanceForm dlg = new ArtifactConcordanceForm(rule);

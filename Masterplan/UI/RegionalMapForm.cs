@@ -28,7 +28,7 @@ namespace Masterplan.UI
 				Toolbar.Visible = false;
 
 				OKBtn.Visible = false;
-				CancelBtn.Text = "Close";
+				CancelBtn.Text = Session.I18N.Close;
 
 				MapPanel.Mode = MapViewMode.Plain;
 				MapPanel.HighlightedLocation = loc;

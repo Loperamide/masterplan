@@ -60,7 +60,7 @@ namespace Masterplan.UI
 			{
 				e.Cancel = true;
 
-				if (e.Url.LocalPath == "new")
+				if (e.Url.LocalPath == Session.I18N.New)
 				{
 					MagicItemSection section = new MagicItemSection();
 					section.Header = "New Section";

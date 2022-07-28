@@ -118,7 +118,7 @@ namespace Masterplan.Data
 			get { return fRange; }
 			set { fRange = value; }
 		}
-		string fRange = "Melee weapon";
+		string fRange = Session.I18N.MeleeWeapon;
 
 		/// <summary>
 		/// Gets or sets the power sections.
@@ -186,7 +186,7 @@ namespace Masterplan.Data
 			get { return fHeader; }
 			set { fHeader = value; }
 		}
-		string fHeader = "Effect";
+		string fHeader = Session.I18N.Effect;
 
 		/// <summary>
 		/// Gets or sets the section details.
@@ -502,7 +502,7 @@ namespace Masterplan.Data
 			get { return fSpeed; }
 			set { fSpeed  = value; }
 		}
-		string fSpeed = "6 squares";
+		string fSpeed = "6 " + Session.I18N.Squares;
 
 		/// <summary>
 		/// Gets or sets the race's vision.
@@ -512,7 +512,7 @@ namespace Masterplan.Data
 			get { return fVision; }
 			set { fVision = value; }
 		}
-		string fVision = "Normal";
+		string fVision = Session.I18N.Normal;
 
 		/// <summary>
 		/// Gets or sets the race's starting languages.
@@ -522,7 +522,7 @@ namespace Masterplan.Data
 			get { return fLanguages; }
 			set { fLanguages = value; }
 		}
-		string fLanguages = "Common";
+		string fLanguages = Session.I18N.Common;
 
 		/// <summary>
 		/// Gets or sets the race's skill bonuses.
@@ -1038,7 +1038,7 @@ namespace Masterplan.Data
 			get { return fPrerequisites; }
 			set { fPrerequisites = value; }
 		}
-		string fPrerequisites = "11th level";
+		string fPrerequisites = "11" + Session.I18N.ThLevel;
 
 		/// <summary>
 		/// Gets or sets the paragon path details.
@@ -1134,7 +1134,7 @@ namespace Masterplan.Data
 			get { return fPrerequisites; }
 			set { fPrerequisites = value; }
 		}
-		string fPrerequisites = "21st level";
+		string fPrerequisites = "21" + Session.I18N.StLevel;
 
 		/// <summary>
 		/// Gets or sets the epic destiny details.
@@ -1285,10 +1285,10 @@ namespace Masterplan.Data
 			}
 
 			if (str == "")
-				str = "(empty)";
+				str = "(" + Session.I18N.Empty + ")";
 
 			if (fLevel >= 1)
-				return "Level " + fLevel + ": " + str;
+				return Session.I18N.Level + " " + fLevel + ": " + str;
 			else
 				return str;
 		}

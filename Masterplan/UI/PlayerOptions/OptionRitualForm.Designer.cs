@@ -66,7 +66,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -84,7 +84,7 @@
 			this.DurationLbl.Name = "DurationLbl";
 			this.DurationLbl.Size = new System.Drawing.Size(50, 13);
 			this.DurationLbl.TabIndex = 2;
-			this.DurationLbl.Text = "Duration:";
+			this.DurationLbl.Text = Session.I18N.Duration + ":";
 			// 
 			// DurationBox
 			// 
@@ -126,7 +126,7 @@
 			this.InfoPage.Padding = new System.Windows.Forms.Padding(3);
 			this.InfoPage.Size = new System.Drawing.Size(332, 142);
 			this.InfoPage.TabIndex = 2;
-			this.InfoPage.Text = "Information";
+			this.InfoPage.Text = Session.I18N.Information;
 			this.InfoPage.UseVisualStyleBackColor = true;
 			// 
 			// SkillBox
@@ -148,7 +148,7 @@
 			this.SkillLbl.Name = "SkillLbl";
 			this.SkillLbl.Size = new System.Drawing.Size(50, 13);
 			this.SkillLbl.TabIndex = 8;
-			this.SkillLbl.Text = "Key Skill:";
+			this.SkillLbl.Text = Session.I18N.KeySkill + ":";
 			// 
 			// MarketBox
 			// 
@@ -166,7 +166,7 @@
 			this.MarketLbl.Name = "MarketLbl";
 			this.MarketLbl.Size = new System.Drawing.Size(70, 13);
 			this.MarketLbl.TabIndex = 6;
-			this.MarketLbl.Text = "Market Price:";
+			this.MarketLbl.Text = Session.I18N.MarketPrice + ":";
 			// 
 			// ComponentBox
 			// 
@@ -184,7 +184,7 @@
 			this.ComponentLbl.Name = "ComponentLbl";
 			this.ComponentLbl.Size = new System.Drawing.Size(88, 13);
 			this.ComponentLbl.TabIndex = 4;
-			this.ComponentLbl.Text = "Component Cost:";
+			this.ComponentLbl.Text = Session.I18N.ComponentCost + ":";
 			// 
 			// TimeBox
 			// 
@@ -202,7 +202,7 @@
 			this.TimeLbl.Name = "TimeLbl";
 			this.TimeLbl.Size = new System.Drawing.Size(33, 13);
 			this.TimeLbl.TabIndex = 0;
-			this.TimeLbl.Text = "Time:";
+			this.TimeLbl.Text = Session.I18N.Time + ":";
 			// 
 			// ReadAloudPage
 			// 
@@ -212,7 +212,7 @@
 			this.ReadAloudPage.Padding = new System.Windows.Forms.Padding(3);
 			this.ReadAloudPage.Size = new System.Drawing.Size(332, 142);
 			this.ReadAloudPage.TabIndex = 1;
-			this.ReadAloudPage.Text = "Read-Aloud";
+			this.ReadAloudPage.Text = Session.I18N.ReadAloud;
 			this.ReadAloudPage.UseVisualStyleBackColor = true;
 			// 
 			// ReadAloudBox
@@ -235,7 +235,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(332, 142);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -258,7 +258,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 7;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -270,7 +270,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 8;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// LevelLbl
@@ -280,7 +280,7 @@
 			this.LevelLbl.Name = "LevelLbl";
 			this.LevelLbl.Size = new System.Drawing.Size(33, 13);
 			this.LevelLbl.TabIndex = 2;
-			this.LevelLbl.Text = "Level";
+			this.LevelLbl.Text = Session.I18N.Level;
 			// 
 			// LevelBox
 			// 
@@ -298,7 +298,7 @@
 			this.CatLbl.Name = "CatLbl";
 			this.CatLbl.Size = new System.Drawing.Size(52, 13);
 			this.CatLbl.TabIndex = 4;
-			this.CatLbl.Text = "Category:";
+			this.CatLbl.Text = Session.I18N.Category + ":";
 			// 
 			// CatBox
 			// 
@@ -335,7 +335,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Ritual";
+			this.Text = Session.I18N.Ritual;
 			this.Pages.ResumeLayout(false);
 			this.InfoPage.ResumeLayout(false);
 			this.InfoPage.PerformLayout();

@@ -167,11 +167,11 @@ namespace Masterplan.Data
 			{
 				if (fLevel != -1)
 				{
-					return "Level " + fLevel + ", " + Successes + " successes before 3 failures";
+					return Session.I18N.Level + " " + fLevel + ", " + Successes + " " + Session.I18N.SuccessesBeforeFailure;
 				}
 				else
 				{
-					return Successes + " successes before 3 failures";
+					return Successes + " " + Session.I18N.SuccessesBeforeFailure;
 				}
 			}
 		}

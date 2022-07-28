@@ -286,7 +286,7 @@ namespace Masterplan.Data
 			if (trap != null)
 				return trap.Name;
 
-			return "Creature";
+			return Session.I18N.Creature;
 		}
 	}
 
@@ -363,7 +363,7 @@ namespace Masterplan.Data
 		/// <returns>Returns the string description of the entry.</returns>
 		public string Description(Encounter enc, bool detailed)
 		{
-			return "Round " + fRound;
+			return Session.I18N.Round + " " + fRound;
 		}
 
 		/// <summary>
@@ -409,7 +409,7 @@ namespace Masterplan.Data
 		/// <returns>Returns the string description of the entry.</returns>
 		public string Description(Encounter enc, bool detailed)
 		{
-			return "Start turn: " + EncounterLog.GetName(fID, enc, detailed);
+			return Session.I18N.StartTurn + ": " + EncounterLog.GetName(fID, enc, detailed);
 		}
 
 		/// <summary>
@@ -485,8 +485,8 @@ namespace Masterplan.Data
 				}
 			}
 
-			string verb = (fAmount >= 0) ? "takes" : "heals";
-			return EncounterLog.GetName(fID, enc, detailed) + " " + verb + " " + Math.Abs(fAmount) + types + " damage";
+			string verb = (fAmount >= 0) ? Session.I18N.Takes : Session.I18N.Heals;
+			return EncounterLog.GetName(fID, enc, detailed) + " " + verb + " " + Math.Abs(fAmount) + types + " " + Session.I18N.Damage;
 		}
 
 		/// <summary>
@@ -542,11 +542,11 @@ namespace Masterplan.Data
 		/// <returns>Returns the string description of the entry.</returns>
 		public string Description(Encounter enc, bool detailed)
 		{
-			string state = "not bloodied";
+			string state = Session.I18N.NotBloodied;
 			if (fState != CreatureState.Active)
 				state = fState.ToString().ToLower();
 
-			return EncounterLog.GetName(fID, enc, detailed) + " is <B>" + state + "</B>";
+			return EncounterLog.GetName(fID, enc, detailed) + " " + Session.I18N.Is + " <B>" + state + "</B>";
 		}
 
 		/// <summary>
@@ -614,9 +614,9 @@ namespace Masterplan.Data
 		{
 			string name = EncounterLog.GetName(fID, enc, detailed);
 			if (fAdded)
-				return name + " gained " + fEffectText;
+				return name + " " + Session.I18N.Gained + " " + fEffectText;
 			else
-				return name + " lost " + fEffectText;
+				return name + " " + Session.I18N.Lost + " " + fEffectText;
 		}
 
 		/// <summary>
@@ -684,9 +684,9 @@ namespace Masterplan.Data
 		{
 			string name = EncounterLog.GetName(fID, enc, detailed);
 			if (fAdded)
-				return name + " used <B>" + fPowerName + "</B>";
+				return name + " " + Session.I18N.Used + " <B>" + fPowerName + "</B>";
 			else
-				return name + " recharged <B>" + fPowerName + "</B>";
+				return name + " " + Session.I18N.Recharged + " <B>" + fPowerName + "</B>";
 		}
 
 		/// <summary>
@@ -743,7 +743,7 @@ namespace Masterplan.Data
 		public string Description(Encounter enc, bool detailed)
 		{
 			string name = EncounterLog.GetName(fID, enc, detailed);
-			return name + " used <B>" + fSkillName + "</B>";
+			return name + " " + Session.I18N.Used + " <B>" + fSkillName + "</B>";
 		}
 
 		/// <summary>
@@ -801,9 +801,9 @@ namespace Masterplan.Data
 		{
 			string name = EncounterLog.GetName(fID, enc, detailed);
 			if (fSuccess)
-				return name + " gained a success";
+				return name + " " + Session.I18N.GainedSuccess;
 			else
-				return name + " incurred a failure";
+				return name + " " + Session.I18N.IncurredFailure;
 		}
 
 		/// <summary>
@@ -870,9 +870,9 @@ namespace Masterplan.Data
 		public string Description(Encounter enc, bool detailed)
 		{
 			string name = EncounterLog.GetName(fID, enc, detailed);
-			string str = name + " moves";
+			string str = name + " " + Session.I18N.Moves;
 			if (fDistance > 0)
-				str += " " + fDistance + " sq";
+				str += " " + fDistance + " " + Session.I18N.SQ;
 			if (fDetails != "")
 				str += " " + fDetails.Trim();
 			return str;
@@ -919,7 +919,7 @@ namespace Masterplan.Data
 		/// <returns>Returns the string description of the entry.</returns>
 		public string Description(Encounter enc, bool detailed)
 		{
-			return "Paused (" + fTimestamp.ToShortTimeString() + " " + fTimestamp.ToShortDateString() + ")";
+			return Session.I18N.Paused + " (" + fTimestamp.ToShortTimeString() + " " + fTimestamp.ToShortDateString() + ")";
 		}
 
 		/// <summary>
@@ -963,7 +963,7 @@ namespace Masterplan.Data
 		/// <returns>Returns the string description of the entry.</returns>
 		public string Description(Encounter enc, bool detailed)
 		{
-			return "Resumed (" + fTimestamp.ToShortTimeString() + " " + fTimestamp.ToShortDateString() + ")";
+			return Session.I18N.Resumed + " (" + fTimestamp.ToShortTimeString() + " " + fTimestamp.ToShortDateString() + ")";
 		}
 
 		/// <summary>
@@ -1325,10 +1325,10 @@ namespace Masterplan.Data
 							}
 						}
 
-						rowsets.Add(new Pair<string, List<Guid>>("PCs", pc_ids));
-						rowsets.Add(new Pair<string, List<Guid>>("Allies", ally_ids));
-						rowsets.Add(new Pair<string, List<Guid>>("Neutral", neutral_ids));
-						rowsets.Add(new Pair<string, List<Guid>>("Enemies", enemy_ids));
+						rowsets.Add(new Pair<string, List<Guid>>(Session.I18N.PCs, pc_ids));
+						rowsets.Add(new Pair<string, List<Guid>>(Session.I18N.Allies, ally_ids));
+						rowsets.Add(new Pair<string, List<Guid>>(Session.I18N.Neutral, neutral_ids));
+						rowsets.Add(new Pair<string, List<Guid>>(Session.I18N.Enemies, enemy_ids));
 					}
 					break;
 			}

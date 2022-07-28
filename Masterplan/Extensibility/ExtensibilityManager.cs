@@ -78,7 +78,7 @@ namespace Masterplan.Extensibility
 			catch (ReflectionTypeLoadException rtle)
 			{
 				string name = assembly.ManifestModule.Name;
-				LogSystem.Trace("The add-in '" + name + "' could not be loaded; contact the developer for an updated version.");
+				LogSystem.Trace(Session.I18N.LabelAddins1 + " '" + name + "' " + Session.I18N.LabelAddins2);
 
 				foreach (Exception ex in rtle.LoaderExceptions)
 					Console.WriteLine(ex);

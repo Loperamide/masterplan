@@ -47,65 +47,65 @@ namespace Masterplan.Controls
 			{
 				e.Cancel = true;
 
-				if (e.Url.LocalPath == "new")
+				if (e.Url.LocalPath == Session.I18N.New)
 					OnNewProjectClicked();
 
-				if (e.Url.LocalPath == "open")
+				if (e.Url.LocalPath == Session.I18N.Open)
 					OnOpenProjectClicked();
 
-				if (e.Url.LocalPath == "last")
+				if (e.Url.LocalPath == Session.I18N.Last)
 					OnOpenLastProjectClicked();
 
-				if (e.Url.LocalPath == "delve")
+				if (e.Url.LocalPath == Session.I18N.Delve)
 					OnDelveClicked();
 
-				if (e.Url.LocalPath == "genesis")
+				if (e.Url.LocalPath == Session.I18N.Genesis)
 				{
 					Creature c = new Creature();
-					c.Name = "New Creature";
+					c.Name = Session.I18N.NewCreature;
 
 					Masterplan.UI.CreatureBuilderForm dlg = new Masterplan.UI.CreatureBuilderForm(c);
 					dlg.ShowDialog();
 				}
 
-				if (e.Url.LocalPath == "exodus")
+				if (e.Url.LocalPath == Session.I18N.Exodus)
 				{
 					CreatureTemplate ct = new CreatureTemplate();
-					ct.Name = "New Template";
+					ct.Name = Session.I18N.NewTemplate;
 
 					Masterplan.UI.CreatureTemplateBuilderForm dlg = new Masterplan.UI.CreatureTemplateBuilderForm(ct);
 					dlg.ShowDialog();
 				}
 
-				if (e.Url.LocalPath == "minos")
+				if (e.Url.LocalPath == Session.I18N.Minos)
 				{
 					Trap trap = new Trap();
-					trap.Name = "New Trap";
+					trap.Name = Session.I18N.NewTrap;
 					trap.Attacks.Add(new TrapAttack());
 
 					Masterplan.UI.TrapBuilderForm dlg = new Masterplan.UI.TrapBuilderForm(trap);
 					dlg.ShowDialog();
 				}
 
-				if (e.Url.LocalPath == "excalibur")
+				if (e.Url.LocalPath == Session.I18N.Excalibur)
 				{
 					MagicItem mi = new MagicItem();
-					mi.Name = "New Magic Item";
+					mi.Name = Session.I18N.NewMagicItem;
 
 					Masterplan.UI.MagicItemBuilderForm dlg = new Masterplan.UI.MagicItemBuilderForm(mi);
 					dlg.ShowDialog();
 				}
 
-				if (e.Url.LocalPath == "indiana")
+				if (e.Url.LocalPath == Session.I18N.Indiana)
 				{
 					Artifact a = new Artifact();
-					a.Name = "New Artifact";
+					a.Name = Session.I18N.NewArtifact;
 
 					Masterplan.UI.ArtifactBuilderForm dlg = new Masterplan.UI.ArtifactBuilderForm(a);
 					dlg.ShowDialog();
 				}
 
-				if (e.Url.LocalPath == "manual")
+				if (e.Url.LocalPath == Session.I18N.Manual)
 					open_manual();
 			}
 		}
@@ -155,7 +155,7 @@ namespace Masterplan.Controls
 			List<string> lines = new List<string>();
 
 			lines.Add("<HTML>");
-			lines.AddRange(HTML.GetHead("Masterplan", "Main Menu", Session.Preferences.TextSize));
+			lines.AddRange(HTML.GetHead("Masterplan", Session.I18N.MainMenu, Session.Preferences.TextSize));
 			lines.Add("<BODY>");
 
 			#region Getting Started
@@ -165,7 +165,7 @@ namespace Masterplan.Controls
 			
 			lines.Add("<TR class=heading>");
 			lines.Add("<TD>");
-			lines.Add("<B>Getting Started</B>");
+			lines.Add("<B>" + Session.I18N.GettingStarted + "</B>");
 			lines.Add("</TD>");
 			lines.Add("</TR>");
 
@@ -175,20 +175,20 @@ namespace Masterplan.Controls
 
 				lines.Add("<TR>");
 				lines.Add("<TD>");
-				lines.Add("<A href=\"masterplan:last\">Reopen <I>" + name + "</I></A>");
+				lines.Add("<A href=\"masterplan:" + Session.I18N.Last + "\">" + Session.I18N.Reopen + " <I>" + name + "</I></A>");
 				lines.Add("</TD>");
 				lines.Add("</TR>");
 			}
 
 			lines.Add("<TR>");
 			lines.Add("<TD>");
-			lines.Add("<A href=\"masterplan:new\">Create a new adventure project</A>");
+			lines.Add("<A href=\"masterplan:" + Session.I18N.New + "\">" + Session.I18N.CreateNewAdventureProject + "</A>");
 			lines.Add("</TD>");
 			lines.Add("</TR>");
 
 			lines.Add("<TR>");
 			lines.Add("<TD>");
-			lines.Add("<A href=\"masterplan:open\">Open an existing project</A>");
+			lines.Add("<A href=\"masterplan:" + Session.I18N.Open + "\">" + Session.I18N.OpenExistingProject + "</A>");
 			lines.Add("</TD>");
 			lines.Add("</TR>");
 
@@ -196,7 +196,7 @@ namespace Masterplan.Controls
 			{
 				lines.Add("<TR>");
 				lines.Add("<TD>");
-				lines.Add("<A href=\"masterplan:delve\">Generate a random dungeon delve</A>");
+				lines.Add("<A href=\"masterplan:" + Session.I18N.Delve + "\">" + Session.I18N.GenerateRandomDungeonDelve + "</A>");
 				lines.Add("</TD>");
 				lines.Add("</TR>");
 			}
@@ -205,7 +205,7 @@ namespace Masterplan.Controls
 			{
 				lines.Add("<TR>");
 				lines.Add("<TD>");
-				lines.Add("<A href=\"masterplan:manual\">Read the Masterplan user manual</A>");
+				lines.Add("<A href=\"masterplan:" + Session.I18N.Manual + "\">" + Session.I18N.ReadManual + "</A>");
 				lines.Add("</TD>");
 				lines.Add("</TR>");
 			}

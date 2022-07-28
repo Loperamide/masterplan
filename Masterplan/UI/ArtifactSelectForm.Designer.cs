@@ -54,7 +54,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 0;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			// 
 			// CancelBtn
@@ -65,7 +65,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 1;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// Splitter
@@ -109,12 +109,12 @@
 			// 
 			// NameHdr
 			// 
-			this.NameHdr.Text = "Artifact";
+			this.NameHdr.Text = Session.I18N.Artifact;
 			this.NameHdr.Width = 150;
 			// 
 			// InfoHdr
 			// 
-			this.InfoHdr.Text = "Info";
+			this.InfoHdr.Text = Session.I18N.Info;
 			this.InfoHdr.Width = 150;
 			// 
 			// BrowserPanel
@@ -165,7 +165,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// ArtifactSelectForm
 			// 
@@ -184,7 +184,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Select an Artifact";
+			this.Text = Session.I18N.SelectArtifact;
 			this.Splitter.Panel1.ResumeLayout(false);
 			this.Splitter.Panel2.ResumeLayout(false);
 			this.Splitter.ResumeLayout(false);

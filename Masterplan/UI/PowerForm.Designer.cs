@@ -69,7 +69,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 15;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -81,7 +81,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 16;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// NameLbl
@@ -91,7 +91,7 @@
 			this.NameLbl.Name = "NameLbl";
 			this.NameLbl.Size = new System.Drawing.Size(38, 13);
 			this.NameLbl.TabIndex = 0;
-			this.NameLbl.Text = "Name:";
+			this.NameLbl.Text = Session.I18N.Name + ":";
 			// 
 			// NameBox
 			// 
@@ -150,7 +150,7 @@
 			this.ActionClearLbl.Size = new System.Drawing.Size(31, 13);
 			this.ActionClearLbl.TabIndex = 8;
 			this.ActionClearLbl.TabStop = true;
-			this.ActionClearLbl.Text = "Clear";
+			this.ActionClearLbl.Text = Session.I18N.Clear;
 			this.ActionClearLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ActionClearLbl_LinkClicked);
 			// 
 			// AttackLbl
@@ -183,7 +183,7 @@
 			this.AttackClearLbl.Size = new System.Drawing.Size(31, 13);
 			this.AttackClearLbl.TabIndex = 11;
 			this.AttackClearLbl.TabStop = true;
-			this.AttackClearLbl.Text = "Clear";
+			this.AttackClearLbl.Text = Session.I18N.Clear;
 			this.AttackClearLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AttackClearLbl_LinkClicked);
 			// 
 			// RangeLbl
@@ -230,7 +230,7 @@
 			this.DetailsPage.Padding = new System.Windows.Forms.Padding(3);
 			this.DetailsPage.Size = new System.Drawing.Size(328, 119);
 			this.DetailsPage.TabIndex = 0;
-			this.DetailsPage.Text = "Details";
+			this.DetailsPage.Text = Session.I18N.Details;
 			this.DetailsPage.UseVisualStyleBackColor = true;
 			// 
 			// DetailsBox
@@ -286,7 +286,7 @@
 			// 
 			// InfoHdr
 			// 
-			this.InfoHdr.Text = "Information";
+			this.InfoHdr.Text = Session.I18N.Information;
 			this.InfoHdr.Width = 100;
 			// 
 			// ConditionBox

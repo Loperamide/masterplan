@@ -149,7 +149,7 @@ namespace Masterplan.Controls
 					MapArea ma = m.FindArea(fChallenge.MapAreaID);
 					if (ma != null)
 					{
-						string str = "Location: " + m.Name;
+						string str = Session.I18N.Location + ": " + m.Name;
 						if (ma != null)
 							str += " (" + ma.Name + ")";
 
@@ -161,7 +161,7 @@ namespace Masterplan.Controls
 
 			foreach (SkillChallengeData scd in fChallenge.Skills)
 			{
-				string diff = scd.Difficulty.ToString().ToLower() + " DCs";
+				string diff = scd.Difficulty.ToString().ToLower() + " " + Session.I18N.Dices;
 				if (scd.DCModifier != 0)
 				{
 					if (scd.DCModifier > 0)
@@ -196,14 +196,14 @@ namespace Masterplan.Controls
 
 			if (SkillList.Groups[1].Items.Count == 0)
 			{
-				ListViewItem lvi = SkillList.Items.Add("(none)");
+				ListViewItem lvi = SkillList.Items.Add("(" + Session.I18N.None + ")");
 				lvi.Group = SkillList.Groups[1];
 				lvi.ForeColor = SystemColors.GrayText;
 			}
 
 			if (SkillList.Groups[2].Items.Count == 0)
 			{
-				ListViewItem lvi = SkillList.Items.Add("(none)");
+				ListViewItem lvi = SkillList.Items.Add("(" + Session.I18N.None + ")");
 				lvi.Group = SkillList.Groups[2];
 				lvi.ForeColor = SystemColors.GrayText;
 			}

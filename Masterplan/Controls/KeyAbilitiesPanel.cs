@@ -32,12 +32,12 @@ namespace Masterplan.Controls
 		{
 			fBreakdown = new Dictionary<string, int>();
 
-			fBreakdown["Strength"] = 0;
-			fBreakdown["Constitution"] = 0;
-			fBreakdown["Dexterity"] = 0;
-			fBreakdown["Intelligence"] = 0;
-			fBreakdown["Wisdom"] = 0;
-			fBreakdown["Charisma"] = 0;
+			fBreakdown[Session.I18N.Strength] = 0;
+			fBreakdown[Session.I18N.Constitution] = 0;
+			fBreakdown[Session.I18N.Dexterity] = 0;
+			fBreakdown[Session.I18N.Intelligence] = 0;
+			fBreakdown[Session.I18N.Wisdom] = 0;
+			fBreakdown[Session.I18N.Charisma] = 0;
 
 			foreach (SkillChallengeData scd in sc.Skills)
 			{
@@ -114,17 +114,17 @@ namespace Masterplan.Controls
 			switch (column_index)
 			{
 				case 0:
-					return "Strength";
+					return Session.I18N.Strength;
 				case 1:
-					return "Constitution";
+					return Session.I18N.Constitution;
 				case 2:
-					return "Dexterity";
+					return Session.I18N.Dexterity;
 				case 3:
-					return "Intelligence";
+					return Session.I18N.Intelligence;
 				case 4:
-					return "Wisdom";
+					return Session.I18N.Wisdom;
 				case 5:
-					return "Charisma";
+					return Session.I18N.Charisma;
 			}
 
 			return "";

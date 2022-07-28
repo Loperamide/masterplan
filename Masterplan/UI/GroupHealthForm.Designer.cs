@@ -56,7 +56,7 @@
 			this.CloseBtn.Name = "CloseBtn";
 			this.CloseBtn.Size = new System.Drawing.Size(75, 23);
 			this.CloseBtn.TabIndex = 2;
-			this.CloseBtn.Text = "OK";
+			this.CloseBtn.Text = Session.I18N.Ok;
 			this.CloseBtn.UseVisualStyleBackColor = true;
 			// 
 			// CombatantList

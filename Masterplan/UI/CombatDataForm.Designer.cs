@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Ongoing Conditions", System.Windows.Forms.HorizontalAlignment.Left);
-			System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Ongoing Damage", System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup(Session.I18N.OngoingConditions, System.Windows.Forms.HorizontalAlignment.Left);
+			System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup(Session.I18N.OngoingDamage, System.Windows.Forms.HorizontalAlignment.Left);
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CombatDataForm));
 			this.OKBtn = new System.Windows.Forms.Button();
 			this.CancelBtn = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@
 			this.OKBtn.Name = "OKBtn";
 			this.OKBtn.Size = new System.Drawing.Size(75, 23);
 			this.OKBtn.TabIndex = 13;
-			this.OKBtn.Text = "OK";
+			this.OKBtn.Text = Session.I18N.Ok;
 			this.OKBtn.UseVisualStyleBackColor = true;
 			this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
 			// 
@@ -84,7 +84,7 @@
 			this.CancelBtn.Name = "CancelBtn";
 			this.CancelBtn.Size = new System.Drawing.Size(75, 23);
 			this.CancelBtn.TabIndex = 14;
-			this.CancelBtn.Text = "Cancel";
+			this.CancelBtn.Text = Session.I18N.Cancel;
 			this.CancelBtn.UseVisualStyleBackColor = true;
 			// 
 			// InitLbl
@@ -94,7 +94,7 @@
 			this.InitLbl.Name = "InitLbl";
 			this.InitLbl.Size = new System.Drawing.Size(49, 13);
 			this.InitLbl.TabIndex = 7;
-			this.InitLbl.Text = "Initiative:";
+			this.InitLbl.Text = Session.I18N.Initiative + ":";
 			// 
 			// InitBox
 			// 
@@ -117,7 +117,7 @@
 			this.DamageLbl.Name = "DamageLbl";
 			this.DamageLbl.Size = new System.Drawing.Size(50, 13);
 			this.DamageLbl.TabIndex = 2;
-			this.DamageLbl.Text = "Damage:";
+			this.DamageLbl.Text = Session.I18N.Damage + ":";
 			// 
 			// DamageBox
 			// 
@@ -168,9 +168,9 @@
             this.EffectDurationHdr});
 			this.EffectList.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.EffectList.FullRowSelect = true;
-			listViewGroup1.Header = "Ongoing Conditions";
+			listViewGroup1.Header = Session.I18N.OngoingConditions;
 			listViewGroup1.Name = "ConditionHdr";
-			listViewGroup2.Header = "Ongoing Damage";
+			listViewGroup2.Header = Session.I18N.OngoingDamage;
 			listViewGroup2.Name = "DmgHdr";
 			this.EffectList.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1,
@@ -190,12 +190,12 @@
 			// 
 			// EffectHdr
 			// 
-			this.EffectHdr.Text = "Effect";
+			this.EffectHdr.Text = Session.I18N.Effect;
 			this.EffectHdr.Width = 120;
 			// 
 			// EffectDurationHdr
 			// 
-			this.EffectDurationHdr.Text = "Duration";
+			this.EffectDurationHdr.Text = Session.I18N.Duration;
 			this.EffectDurationHdr.Width = 141;
 			// 
 			// Toolbar
@@ -211,7 +211,7 @@
 			this.Toolbar.Name = "Toolbar";
 			this.Toolbar.Size = new System.Drawing.Size(335, 25);
 			this.Toolbar.TabIndex = 0;
-			this.Toolbar.Text = "toolStrip1";
+			this.Toolbar.Text = Session.I18N.toolStrip1;
 			// 
 			// AddBtn
 			// 
@@ -220,7 +220,7 @@
 			this.AddBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.AddBtn.Name = "AddBtn";
 			this.AddBtn.Size = new System.Drawing.Size(33, 22);
-			this.AddBtn.Text = "Add";
+			this.AddBtn.Text = Session.I18N.Add;
 			this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
 			// 
 			// RemoveBtn
@@ -230,7 +230,7 @@
 			this.RemoveBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.RemoveBtn.Name = "RemoveBtn";
 			this.RemoveBtn.Size = new System.Drawing.Size(54, 22);
-			this.RemoveBtn.Text = "Remove";
+			this.RemoveBtn.Text = Session.I18N.Remove;
 			this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
 			// 
 			// EditBtn
@@ -240,7 +240,7 @@
 			this.EditBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EditBtn.Name = "EditBtn";
 			this.EditBtn.Size = new System.Drawing.Size(31, 22);
-			this.EditBtn.Text = "Edit";
+			this.EditBtn.Text = Session.I18N.Edit;
 			this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
 			// 
 			// toolStripSeparator1
@@ -255,7 +255,7 @@
 			this.DmgBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.DmgBtn.Name = "DmgBtn";
 			this.DmgBtn.Size = new System.Drawing.Size(105, 22);
-			this.DmgBtn.Text = "Ongoing Damage";
+			this.DmgBtn.Text = Session.I18N.OngoingDamage;
 			this.DmgBtn.Click += new System.EventHandler(this.DmgBtn_Click);
 			// 
 			// SavesBtn
@@ -265,7 +265,7 @@
 			this.SavesBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.SavesBtn.Name = "SavesBtn";
 			this.SavesBtn.Size = new System.Drawing.Size(40, 22);
-			this.SavesBtn.Text = "Saves";
+			this.SavesBtn.Text = Session.I18N.Saves;
 			this.SavesBtn.Click += new System.EventHandler(this.SavesBtn_Click);
 			// 
 			// TempHPBox
@@ -290,7 +290,7 @@
 			this.TempHPLbl.Name = "TempHPLbl";
 			this.TempHPLbl.Size = new System.Drawing.Size(55, 13);
 			this.TempHPLbl.TabIndex = 4;
-			this.TempHPLbl.Text = "Temp HP:";
+			this.TempHPLbl.Text = Session.I18N.TempHP + ":";
 			// 
 			// LabelLbl
 			// 
@@ -299,7 +299,7 @@
 			this.LabelLbl.Name = "LabelLbl";
 			this.LabelLbl.Size = new System.Drawing.Size(36, 13);
 			this.LabelLbl.TabIndex = 0;
-			this.LabelLbl.Text = "Label:";
+			this.LabelLbl.Text = Session.I18N.Label + ":";
 			// 
 			// LabelBox
 			// 
@@ -343,7 +343,7 @@
 			this.AltitudeLbl.Name = "AltitudeLbl";
 			this.AltitudeLbl.Size = new System.Drawing.Size(45, 13);
 			this.AltitudeLbl.TabIndex = 9;
-			this.AltitudeLbl.Text = "Altitude:";
+			this.AltitudeLbl.Text = Session.I18N.Altitude + ":";
 			// 
 			// CombatDataForm
 			// 
@@ -374,7 +374,7 @@
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Combatant";
+			this.Text = Session.I18N.Combatant;
 			((System.ComponentModel.ISupportInitialize)(this.InitBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.DamageBox)).EndInit();
 			this.ConditionPanel.ResumeLayout(false);
